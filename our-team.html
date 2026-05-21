@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Team — Academic & Business Professionals | DFree Novelish</title>
+<meta name="description" content="Meet the dedicated team at DFree Novelish — experienced academic writers, developers, marketers, and consultants committed to delivering excellence.">
+<meta name="keywords" content="DFree Novelish team, academic writers, web developers, business consultants, research team">
+<meta name="author" content="DFree Novelish">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.dfreenovelish.com/our-team.html">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.dfreenovelish.com/our-team.html">
+<meta property="og:title" content="Our Team — DFree Novelish">
+<meta property="og:description" content="A team of passionate professionals dedicated to your success. Meet the people behind DFree Novelish.">
+<meta property="og:image" content="https://www.dfreenovelish.com/assets/DFREE-logo.png">
+<meta property="og:site_name" content="DFree Novelish">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Our Team — DFree Novelish">
+<meta name="twitter:description" content="A team of passionate professionals dedicated to your success. Meet the people behind DFree Novelish.">
+<meta name="twitter:image" content="https://www.dfreenovelish.com/assets/DFREE-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<style>
+
+/* ============================================================
+   UNIFIED NAVBAR  — DFree Novelish
+   ============================================================ */
+:root{
+  --dn-gold:#C5A059;
+  --dn-gold2:#d4af37;
+  --dn-gold-glow:rgba(197,160,89,.15);
+  --dn-dark:#07070a;
+  --dn-surface:rgba(10,11,16,.97);
+  --dn-border:rgba(255,255,255,.09);
+  --dn-muted:#8b92a5;
+  --dn-pill:100px;
+  --dn-r:16px;
+  --ff-display:'Cormorant Garamond',serif;
+  --ff-body:'Plus Jakarta Sans',sans-serif;
+}
+
+/* ── base bar ── */
+#dnNav{
+  position:fixed;top:0;left:0;right:0;z-index:1050;
+  padding:18px 0;
+  transition:all .45s cubic-bezier(.16,1,.3,1);
+  border-bottom:1px solid transparent;
+}
+#dnNav.dn-scrolled{
+  background:rgba(7,7,10,.92);
+  backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);
+  padding:12px 0;
+  border-bottom:1px solid var(--dn-border);
+  box-shadow:0 4px 24px rgba(0,0,0,.4);
+}
+
+/* ── logo ── */
+.dn-logo img{height:40px;width:auto;object-fit:contain;display:block;}
+.dn-logo-text{
+  font-family:var(--ff-display);font-size:1.55rem;font-weight:600;
+  color:#fff;text-decoration:none;letter-spacing:.03em;
+}
+.dn-logo-text em{font-style:italic;color:var(--dn-gold);}
+
+/* ── desktop links ── */
+.dn-nav-list{
+  display:flex;align-items:center;gap:8px;
+  list-style:none;margin:0;padding:0;
+}
+.dn-nav-list .dn-item>a{
+  font-family:var(--ff-body);
+  font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--dn-muted);text-decoration:none;
+  padding:8px 12px;border-radius:8px;
+  display:flex;align-items:center;gap:5px;
+  transition:color .25s,background .25s;
+  white-space:nowrap;
+}
+.dn-nav-list .dn-item>a:hover,
+.dn-nav-list .dn-item>a.dn-active{
+  color:var(--dn-gold);background:var(--dn-gold-glow);
+}
+.dn-nav-list .dn-item>a.dn-active{
+  position:relative;
+}
+.dn-nav-list .dn-item>a.dn-active::after{
+  content:'';position:absolute;bottom:0;left:12px;right:12px;
+  height:2px;background:var(--dn-gold);border-radius:2px;
+}
+
+/* ── dropdown ── */
+.dn-item{position:relative;}
+.dn-dropdown{
+  position:absolute;top:calc(100% + 6px);left:0;
+  background:var(--dn-surface);
+  backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  border:1px solid var(--dn-border);
+  border-radius:var(--dn-r);
+  padding:8px 0;min-width:230px;
+  list-style:none;margin:0;
+  opacity:0;visibility:hidden;
+  transform:translateY(10px);
+  transition:all .3s cubic-bezier(.16,1,.3,1);
+  box-shadow:0 24px 48px rgba(0,0,0,.65);
+  z-index:1060;
+}
+.dn-item:hover .dn-dropdown,
+.dn-item:focus-within .dn-dropdown{
+  opacity:1;visibility:visible;transform:translateY(0);
+}
+.dn-dropdown li a{
+  display:flex;align-items:center;gap:10px;
+  padding:10px 20px;
+  font-family:var(--ff-body);font-size:.78rem;font-weight:500;
+  letter-spacing:.05em;text-transform:uppercase;
+  color:var(--dn-muted);text-decoration:none;
+  border-left:2px solid transparent;
+  transition:all .22s;
+}
+.dn-dropdown li a:hover{
+  color:var(--dn-gold);
+  background:rgba(197,160,89,.06);
+  border-left-color:var(--dn-gold);
+  padding-left:26px;
+}
+.dn-chevron{
+  display:inline-block;
+  border:4px solid transparent;
+  border-top-color:currentColor;
+  border-bottom:0;
+  margin-top:2px;
+  transition:transform .3s;
+  flex-shrink:0;
+}
+.dn-item:hover .dn-chevron{transform:rotate(180deg);}
+
+/* ── CTA button ── */
+.dn-btn-cta{
+  font-family:var(--ff-body);
+  font-size:.78rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  color:#fff;text-decoration:none;
+  padding:11px 26px;
+  border:1px solid rgba(197,160,89,.5);
+  border-radius:var(--dn-pill);
+  background:var(--dn-gold-glow);
+  backdrop-filter:blur(10px);
+  transition:all .3s;
+  white-space:nowrap;
+}
+.dn-btn-cta:hover{
+  background:var(--dn-gold);border-color:var(--dn-gold);
+  color:#07070a;box-shadow:0 8px 24px rgba(197,160,89,.3);
+  transform:translateY(-2px);
+}
+
+/* ── hamburger ── */
+.dn-toggler{
+  display:none;
+  background:transparent;border:1px solid var(--dn-border);
+  border-radius:8px;padding:8px 10px;cursor:pointer;
+  flex-direction:column;gap:5px;
+}
+.dn-toggler span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;transition:all .3s;}
+.dn-toggler.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.dn-toggler.open span:nth-child(2){opacity:0;}
+.dn-toggler.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+/* ── mobile menu ── */
+.dn-mobile-menu{
+  display:none;
+  position:fixed;top:0;left:0;right:0;bottom:0;z-index:1040;
+  background:rgba(7,7,10,.97);backdrop-filter:blur(24px);
+  padding:100px 32px 40px;
+  overflow-y:auto;
+  transform:translateX(100%);
+  transition:transform .45s cubic-bezier(.16,1,.3,1);
+}
+.dn-mobile-menu.open{transform:translateX(0);}
+.dn-mob-list{list-style:none;padding:0;margin:0;}
+.dn-mob-list>li{border-bottom:1px solid var(--dn-border);}
+.dn-mob-list>li>a{
+  display:block;padding:18px 0;
+  font-family:var(--ff-display);font-size:2rem;font-weight:400;
+  color:#fff;text-decoration:none;
+  transition:color .25s;
+}
+.dn-mob-list>li>a:hover,.dn-mob-list>li>a.dn-active{color:var(--dn-gold);}
+.dn-mob-sub{
+  list-style:none;padding:0 0 12px 16px;margin:0;
+  display:none;
+}
+.dn-mob-sub.open{display:block;}
+.dn-mob-sub li a{
+  display:block;padding:8px 0;
+  font-family:var(--ff-body);font-size:.85rem;font-weight:500;
+  letter-spacing:.05em;text-transform:uppercase;
+  color:var(--dn-muted);text-decoration:none;
+  transition:color .25s;
+}
+.dn-mob-sub li a:hover{color:var(--dn-gold);}
+.dn-mob-cta{
+  margin-top:32px;
+  display:inline-block;
+  font-family:var(--ff-body);font-size:.85rem;font-weight:700;
+  letter-spacing:.07em;text-transform:uppercase;
+  color:#07070a;text-decoration:none;
+  background:var(--dn-gold);
+  padding:16px 40px;border-radius:var(--dn-pill);
+  transition:all .3s;
+}
+.dn-mob-cta:hover{background:var(--dn-gold2);box-shadow:0 8px 24px rgba(197,160,89,.35);}
+
+/* ── responsive ── */
+@media(max-width:991px){
+  .dn-desktop{display:none!important;}
+  .dn-toggler{display:flex;}
+  .dn-mobile-menu{display:block;}
+}
+
+/* ============================================================
+   UNIFIED FOOTER  — DFree Novelish
+   ============================================================ */
+#dnFooter{
+  background:#07070a;
+  color:#fff;
+  padding:80px 0 0;
+  border-top:1px solid rgba(255,255,255,.06);
+  font-family:var(--ff-body,'Plus Jakarta Sans',sans-serif);
+}
+
+/* top grid */
+.dn-footer-top{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:60px;
+  padding-bottom:60px;
+  border-bottom:1px solid rgba(255,255,255,.07);
+}
+.dn-f-brand p{
+  font-size:.9rem;color:#8b92a5;line-height:1.9;
+  font-weight:300;max-width:300px;margin-top:20px 0 0;
+}
+.dn-f-logo{height:42px;width:auto;filter:grayscale(1) brightness(2.5);margin-bottom:20px;display:block;}
+
+/* cols */
+.dn-f-head{
+  font-size:.72rem;font-weight:700;letter-spacing:.18em;
+  text-transform:uppercase;color:#fff;margin-bottom:24px;
+  display:flex;align-items:center;gap:10px;
+}
+.dn-f-head::before{content:'';width:20px;height:1px;background:var(--dn-gold,#C5A059);flex-shrink:0;}
+.dn-f-links{list-style:none;padding:0;margin:0;}
+.dn-f-links li{margin-bottom:14px;}
+.dn-f-links a{
+  font-size:.88rem;color:#8b92a5;text-decoration:none;
+  font-weight:300;
+  display:inline-flex;align-items:center;gap:6px;
+  transition:all .3s;
+}
+.dn-f-links a:hover{color:var(--dn-gold,#C5A059);padding-left:4px;}
+
+/* newsletter stripe */
+.dn-f-newsletter{
+  background:rgba(197,160,89,.07);
+  border:1px solid rgba(197,160,89,.18);
+  border-radius:16px;
+  padding:28px 32px;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:24px;flex-wrap:wrap;
+  margin-bottom:0;
+}
+.dn-f-newsletter p{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.3rem;font-style:italic;
+  color:#fff;margin:0;
+}
+.dn-f-newsletter span{font-size:.85rem;color:#8b92a5;display:block;margin-top:4px;font-style:normal;font-family:inherit;}
+.dn-f-nl-form{display:flex;gap:10px;flex-wrap:wrap;}
+.dn-f-nl-form input{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:100px;
+  padding:12px 24px;
+  color:#fff;font-size:.85rem;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  outline:none;min-width:240px;
+  transition:border-color .3s;
+}
+.dn-f-nl-form input::placeholder{color:#8b92a5;}
+.dn-f-nl-form input:focus{border-color:var(--dn-gold,#C5A059);}
+.dn-f-nl-form button{
+  background:var(--dn-gold,#C5A059);
+  color:#07070a;border:none;
+  border-radius:100px;padding:12px 28px;
+  font-size:.78rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  cursor:pointer;transition:all .3s;white-space:nowrap;
+  font-family:'Plus Jakarta Sans',sans-serif;
+}
+.dn-f-nl-form button:hover{background:#d4af37;box-shadow:0 6px 20px rgba(197,160,89,.35);}
+
+/* socials */
+.dn-socials{display:flex;gap:12px;margin-top:28px;}
+.dn-socials a{
+  width:38px;height:38px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.1);
+  display:flex;align-items:center;justify-content:center;
+  color:#8b92a5;text-decoration:none;font-size:.7rem;
+  font-weight:700;letter-spacing:.04em;
+  transition:all .3s;
+}
+.dn-socials a:hover{border-color:var(--dn-gold,#C5A059);color:var(--dn-gold,#C5A059);background:rgba(197,160,89,.1);}
+
+/* bottom bar */
+
+.dn-footer-bottom p{font-size:.82rem;color:#8b92a5;font-weight:300;margin:0;}
+.dn-footer-bottom .dn-tagline{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;color:var(--dn-gold,#C5A059);font-size:.95rem;
+}
+
+/* responsive */
+@media(max-width:991px){
+  .dn-footer-top{grid-template-columns:1fr 1fr;gap:40px;}
+  .dn-f-newsletter{flex-direction:column;align-items:flex-start;}
+}
+@media(max-width:576px){
+  .dn-footer-top{grid-template-columns:1fr;gap:36px;}
+  #dnFooter{padding:60px 0 0;}
+  
+  .dn-f-nl-form input{min-width:180px;}
+}
+
+/* EXACT DESIGN SYSTEM ARCHITECTURE */
+:root {
+  --bg-deep: #050507;
+  --bg-surface: #0a0b10;
+  --bg-light: #F5F4F0;
+  --bg-light-surface: #FFFFFF;
+  --gold: #d4af37;
+  --gold-glow: rgba(212, 175, 55, 0.15);
+  --text-light: #f8f9fa;
+  --text-muted-light: #8b92a5;
+  --text-dark: #09090B;
+  --text-muted-dark: #52525B;
+  --border-dark: rgba(255, 255, 255, 0.08);
+  --border-light: rgba(0, 0, 0, 0.08);
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-pill: 100px;
+}
+
+body { font-family: var(--font-body); background: var(--bg-deep); color: var(--text-light); margin: 0; padding: 0; overflow-x: hidden; }
+.theme-light { background-color: var(--bg-light); color: var(--text-dark); }
+body::before { content: ''; position: fixed; inset: 0; background: url('https://grainy-gradients.vercel.app/noise.svg'); opacity: 0.03; pointer-events: none; z-index: 9999; }
+
+/* NAVBAR */
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 20px 0; transition: all 0.4s ease; background: rgba(5, 5, 7, 0.95); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+.nav-logo-img { height: 40px; }
+.nav-links { display: flex; align-items: center; gap: 40px; list-style: none; margin: 0; }
+.nav-item > a { color: var(--text-muted-light); text-decoration: none; font-size: 0.85rem; font-weight: 500; text-transform: uppercase; }
+.nav-item > a:hover, .nav-item > a.active { color: var(--gold); }
+
+/* TEAM HERO (Dark Theme) */
+#team-hero { padding: 180px 0 100px; text-align: center; border-bottom: 1px solid var(--border-dark); }
+.hero-h1 { font-family: var(--font-display); font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 400; color: #fff; margin-bottom: 20px; }
+.hero-h1 em { color: var(--gold); font-style: italic; }
+.hero-desc { font-size: 1.1rem; color: var(--text-muted-light); max-width: 600px; margin: 0 auto; font-weight: 300; }
+
+/* TEAM GRID (Light Theme) */
+#team-grid { padding: 100px 0 140px; }
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin-top: 60px; }
+.team-card { 
+  background: var(--bg-light-surface); 
+  border: 1px solid var(--border-light); 
+  border-radius: var(--radius-lg); 
+  padding: 40px 24px; 
+  text-align: center; 
+  transition: all 0.4s ease; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03); 
+}
+.team-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.06); border-color: rgba(212, 175, 55, 0.3); }
+.team-avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 24px; }
+.team-name { font-family: var(--font-display); font-size: 1.4rem; font-weight: 600; color: var(--text-dark); margin-bottom: 4px; }
+.team-role { font-size: 0.8rem; color: var(--gold); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; margin: 0; }
+
+/* FOOTER */
+footer { background: #020203; padding: 80px 0 30px; color: #FFFFFF; border-top: 1px solid rgba(255,255,255,0.05); }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 60px; margin-bottom: 60px; }
+.footer-copy { font-size: 0.85rem; color: var(--text-muted-light); }
+
+@media (max-width: 1199px) { .team-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 991px) { .team-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 767px) { .team-grid { grid-template-columns: 1fr; } }
+
+/* ── Logo Image ── */
+.nav-logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+.footer-logo-img {
+  height: 50px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+.nav-logo-placeholder { display: none !important; }
+.nav-logo-name { display: none !important; }
+.footer-brand-name { display: none !important; }
+
+
+#footer { background: #080808; border-top: 1px solid rgba(255,255,255,0.07); padding: 60px 0 0; }
+.footer-nl { display: flex; align-items: center; justify-content: space-between; gap: 32px; background: rgba(196,154,60,0.06); border: 1px solid rgba(196,154,60,0.15); border-radius: 16px; padding: 32px 40px; margin-bottom: 60px; flex-wrap: wrap; }
+.footer-nl p { font-family: var(--ff-serif, serif); font-size: 1.4rem; font-style: italic; color: #F0EEE8; margin-bottom: 5px; }
+.footer-nl span { font-size: 0.82rem; color: #6B6860; }
+.footer-nl-form { display: flex; gap: 10px; flex-wrap: wrap; }
+.footer-nl-form input { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 999px; padding: 12px 22px; color: #F0EEE8; font-size: 0.88rem; outline: none; min-width: 220px; }
+.footer-nl-form button { background: #C49A3C; color: #080808; border: none; border-radius: 999px; padding: 12px 28px; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 60px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+.footer-brand p { font-size: 0.86rem; color: #6B6860; line-height: 1.82; font-weight: 300; max-width: 280px; }
+.footer-socials { display: flex; gap: 10px; margin-top: 28px; }
+.footer-socials a { width: 38px; height: 38px; border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; color: rgba(240,238,232,0.5); transition: all 0.25s; text-decoration: none; }
+.footer-socials a:hover { border-color: #C49A3C; color: #C49A3C; }
+.footer-col-hd { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #C49A3C; margin-bottom: 20px; display: flex; align-items: center; gap: 8px; }
+.footer-col-hd::before { content: ''; width: 14px; height: 1px; background: #C49A3C; }
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 14px; }
+.footer-links a { font-size: 0.86rem; color: rgba(240,238,232,0.45); transition: all 0.25s; text-decoration: none; display: block; }
+.footer-links a:hover { color: rgba(240,238,232,0.85); padding-left: 4px; }
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; padding: 24px 0; flex-wrap: wrap; gap: 16px; }
+.footer-bottom p { font-size: 0.8rem; color: rgba(240,238,232,0.25); font-weight: 300; }
+.footer-bottom .tag { font-family: var(--ff-serif, serif); font-style: italic; color: #C49A3C; font-size: 0.95rem; }
+
+</style>
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/DFREE-logo.png" alt="DFree Novelish" class="nav-logo-img">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-drop">
+        <a href="about.html" class="active">About ▾</a>
+        <ul class="nav-drop-menu">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="chairman-msg.html">Chairman's Message</a></li>
+          <li><a href="our-team.html" class="active">Our Team</a></li>
+          <li><a href="our-advisor.html">Our Advisors</a></li>
+          <li><a href="our-client.html">Our Clients</a></li>
+          <li><a href="certifications.html">Awards &amp; Certificates</a></li>
+        </ul>
+      </li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="eventsandconf.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="sample-work.html">Sample Work</a></li>
+      <li><a href="contact-us.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta-group">
+      <a href="contact-us.html" class="nav-cta">Start a Project</a>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="mob-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About Us</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="eventsandconf.html">Events</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="sample-work.html">Sample Work</a></li>
+    <li><a href="contact-us.html">Contact</a></li>
+  </ul>
+  <a href="contact-us.html" class="mob-cta">Start a Project</a>
+</div>
+
+
+
+
+
+<div class="dn-mobile-menu" id="dnMobileMenu">
+  <ul class="dn-mob-list">
+    <li><a href="index.html">Home</a></li>
+    <li>
+      <a href="about.html" id="dnMobAbout" class="dn-active">About Us &nbsp;<span class="dn-chevron" style="border-top-color:currentColor;"></span></a>
+      <ul class="dn-mob-sub" id="dnMobAboutSub">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="chairman-msg.html">Chairman's Message</a></li>
+        <li><a href="our-team.html">Our Team</a></li>
+        <li><a href="our-advisor.html">Our Advisors</a></li>
+        <li><a href="our-client.html">Our Clients</a></li>
+        <li><a href="certifications.html">Awards &amp; Certificates</a></li>
+      </ul>
+    </li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="eventsandconf.html">Events</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="sample-work.html">Sample Work</a></li>
+    <li><a href="contact-us.html">Contact</a></li>
+  </ul>
+  <a href="contact-us.html" class="dn-mob-cta">Start a Project</a>
+</div>
+<!-- ===== /UNIFIED NAVBAR ===== -->
+
+
+
+
+<section id="team-hero">
+  <div class="container">
+    <h1 class="hero-h1">Our Team: <em>The Creative Force</em></h1>
+    <p class="hero-desc">At DFree Novelish, our team comprises dedicated professionals with expertise in education, web development, and social media marketing.</p>
+  </div>
+</section>
+
+<section id="team-grid" class="theme-light">
+  <div class="container">
+    <div class="team-grid">
+      <div class="team-card"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?fit=crop&w=300&h=300" class="team-avatar"><h3 class="team-name">Mukul Bansal</h3><p class="team-role">Company Secretary</p></div>
+      <div class="team-card"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?fit=crop&w=300&h=300" class="team-avatar"><h3 class="team-name">Ashish Sharma</h3><p class="team-role">Chartered Accountant</p></div>
+      <div class="team-card"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?fit=crop&w=300&h=300" class="team-avatar"><h3 class="team-name">Megha Agarwal</h3><p class="team-role">Research Associate</p></div>
+      <div class="team-card"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=300&h=300" class="team-avatar"><h3 class="team-name">Rashi Gupta</h3><p class="team-role">Operation Executive</p></div>
+      <div class="team-card"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?fit=crop&w=300&h=300" class="team-avatar"><h3 class="team-name">Simran Lakhani</h3><p class="team-role">Business Development</p></div>
+      <div class="team-card"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?fit=crop&w=300&h=300" class="team-avatar"><h3 class="team-name">Navneet Jha</h3><p class="team-role">Software Developer</p></div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===== UNIFIED FOOTER ===== -->
+<!-- ══ FOOTER ══ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-nl reveal">
+      <div>
+        <p>Stay in the loop.</p>
+        <span>Get insights, updates &amp; exclusive offers — no spam, ever.</span>
+      </div>
+      <div class="footer-nl-form">
+        <input type="email" id="nl-email" placeholder="your@email.com">
+        <button type="button" >Subscribe</button>
+      </div>
+    </div>
+    <div class="footer-grid reveal">
+      <div class="footer-brand">
+        <img src="assets/DFREE-logo.png" alt="DFree Novelish" class="footer-logo-img">
+        <p>An elite agency delivering uncompromising quality in academic support and digital business growth — globally.</p>
+        <div class="footer-socials">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="X / Twitter">X</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-hd">Academic</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Assignment Writing</a></li>
+          <li><a href="services.html">SOP &amp; Resumes</a></li>
+          <li><a href="services.html">Thesis Support</a></li>
+          <li><a href="services.html">Turnitin Checks</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-hd">Business</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Custom Web Dev</a></li>
+          <li><a href="services.html">Social Media</a></li>
+          <li><a href="services.html">E-Learning Tech</a></li>
+          <li><a href="services.html">Brand Identity</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-hd">Connect</div>
+        <ul class="footer-links">
+          <li><a href="contact-us.html">Start a Project</a></li>
+          <li><a href="https://wa.me/" target="_blank" rel="noopener">WhatsApp Support</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="eventsandconf.html">Events &amp; Conferences</a></li>
+          <li><a href="mailto:info@dfreenovelish.com">info@dfreenovelish.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 DFree Novelish. All rights reserved.</p>
+      <p class="tag">Excellence Delivered.</p>
+    </div>
+  </div>
+</footer>
+<!-- ===== /UNIFIED FOOTER ===== -->
+
+
+<script>
+/* ── Unified Navbar JS ── */
+(function(){
+  var nav  = document.getElementById('dnNav');
+  var tog  = document.getElementById('dnToggler');
+  var mob  = document.getElementById('dnMobileMenu');
+  var mobA = document.getElementById('dnMobAbout');
+  var mobS = document.getElementById('dnMobAboutSub');
+
+  // scroll effect
+  function onScroll(){ nav.classList.toggle('dn-scrolled', window.scrollY > 48); }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  // hamburger toggle
+  tog.addEventListener('click', function(){
+    tog.classList.toggle('open');
+    mob.classList.toggle('open');
+    document.body.style.overflow = mob.classList.contains('open') ? 'hidden' : '';
+  });
+
+  // mobile about sub-toggle
+  if(mobA && mobS){
+    mobA.addEventListener('click', function(e){
+      e.preventDefault();
+      mobS.classList.toggle('open');
+    });
+  }
+
+  // close mobile on link click
+  mob.querySelectorAll('a:not(#dnMobAbout)').forEach(function(a){
+    a.addEventListener('click', function(){
+      tog.classList.remove('open');
+      mob.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+})();
+</script>
+<script src="/js/app.js"></script>
+<script src="/js/chatbot.js"></script>
+
+<script>
+/* ══ DFree Novelish — Universal CTA & Newsletter Handler ══ */
+(function() {
+  function showToast(msg, type) {
+    var existing = document.getElementById('dn-page-toast');
+    if (!existing) {
+      var t = document.createElement('div');
+      t.id = 'dn-page-toast';
+      t.style.cssText = 'position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(80px);background:#0F0F0F;border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:16px 28px;font-size:0.9rem;color:#F0EEE8;z-index:99999;transition:all 0.4s cubic-bezier(0.16,1,0.3,1);opacity:0;display:flex;align-items:center;gap:10px;box-shadow:0 20px 60px rgba(0,0,0,0.6);min-width:260px;justify-content:center;font-family:Outfit,sans-serif;';
+      document.body.appendChild(t);
+      existing = t;
+    }
+    existing.style.borderColor = type === 'success' ? 'rgba(52,211,153,0.4)' : 'rgba(239,68,68,0.4)';
+    existing.innerHTML = '<span style="color:' + (type==='success'?'#34d399':'#ef4444') + ';font-weight:700;">' + (type==='success'?'✓':'✕') + '</span><span>' + msg + '</span>';
+    existing.style.transform = 'translateX(-50%) translateY(0)';
+    existing.style.opacity = '1';
+    setTimeout(function() { existing.style.transform = 'translateX(-50%) translateY(80px)'; existing.style.opacity = '0'; }, 4500);
+  }
+
+  /* Newsletter subscribe button */
+  function setupNewsletter() {
+    var btn = document.getElementById('nl-submit') || document.querySelector('.footer-nl-form button, #footer .footer-nl-form button');
+    var inp = document.getElementById('nl-email') || document.querySelector('.footer-nl-form input[type="email"], #footer input[type="email"]');
+    if (!btn || !inp) return;
+    // Remove any old onclick
+    btn.removeAttribute('onclick');
+    btn.addEventListener('click', async function() {
+      var email = inp.value.trim();
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        inp.style.borderColor = '#ef4444'; inp.focus(); return;
+      }
+      inp.style.borderColor = '';
+      btn.disabled = true; btn.textContent = '...';
+      try {
+        var res = await fetch('/api/newsletter', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({email: email})});
+        var data = await res.json();
+        showToast(data.message || (data.success ? 'Subscribed!' : 'Error, try again.'), data.success ? 'success' : 'error');
+        if (data.success) inp.value = '';
+      } catch(e) { showToast('Error connecting. Try again.', 'error'); }
+      finally { btn.disabled = false; btn.textContent = 'Subscribe'; }
+    });
+  }
+
+  /* Quote / CTA modal for "Start a Project" links that aren't on contact page */
+  function setupQuoteModal() {
+    if (window.location.pathname.includes('contact-us')) return;
+    // Create modal
+    var modal = document.createElement('div');
+    modal.id = 'dn-quote-modal';
+    modal.style.cssText = 'position:fixed;inset:0;z-index:9990;display:none;align-items:center;justify-content:center;padding:20px;';
+    modal.innerHTML = '<div style="position:absolute;inset:0;background:rgba(0,0,0,0.8);backdrop-filter:blur(8px);" id="dn-modal-overlay"></div>' +
+      '<div style="position:relative;z-index:1;background:#0F0F0F;border:1px solid rgba(196,154,60,0.3);border-radius:24px;padding:48px;width:100%;max-width:540px;max-height:90vh;overflow-y:auto;">' +
+        '<button id="dn-modal-close" style="position:absolute;top:20px;right:20px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;color:#F0EEE8;width:36px;height:36px;cursor:pointer;font-size:1.2rem;display:flex;align-items:center;justify-content:center;">&times;</button>' +
+        '<h2 style="font-family:Cormorant Garamond,serif;font-size:2rem;font-weight:400;color:#F0EEE8;margin-bottom:8px;">Start a <em style=\'color:#C49A3C;font-style:italic;\'>Project</em></h2>' +
+        '<p style="font-size:0.88rem;color:#6B6860;margin-bottom:32px;">Tell us what you need and we'll get back to you within 24 hours.</p>' +
+        '<form id="dn-quote-form" novalidate>' +
+          '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;">' +
+            '<div><label style="display:block;font-size:0.7rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(240,238,232,0.4);margin-bottom:8px;">Your Name *</label>' +
+            '<input name="name" type="text" required placeholder="John Doe" style="width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 16px;color:#F0EEE8;font-size:0.9rem;font-family:Outfit,sans-serif;outline:none;" class="dn-qinput"></div>' +
+            '<div><label style="display:block;font-size:0.7rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(240,238,232,0.4);margin-bottom:8px;">Email *</label>' +
+            '<input name="email" type="email" required placeholder="john@email.com" style="width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 16px;color:#F0EEE8;font-size:0.9rem;font-family:Outfit,sans-serif;outline:none;" class="dn-qinput"></div>' +
+          '</div>' +
+          '<div style="margin-bottom:16px;"><label style="display:block;font-size:0.7rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(240,238,232,0.4);margin-bottom:8px;">Service Needed</label>' +
+          '<select name="service" style="width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 16px;color:#F0EEE8;font-size:0.9rem;font-family:Outfit,sans-serif;outline:none;cursor:pointer;" class="dn-qinput">' +
+            '<option value="">— Choose a service —</option>' +
+            '<optgroup label="Academic"><option>Assignment Help</option><option>Research Writing</option><option>SOP &amp; Resumes</option><option>Turnitin Report</option><option>Thesis Support</option><option>Content Writing</option></optgroup>' +
+            '<optgroup label="Business"><option>Web Design &amp; Development</option><option>Social Media Marketing</option><option>Software Development</option><option>iOS App Development</option><option>Digital Ads</option><option>Brand Identity</option></optgroup>' +
+            '<option>Other / General Inquiry</option>' +
+          '</select></div>' +
+          '<div style="margin-bottom:24px;"><label style="display:block;font-size:0.7rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(240,238,232,0.4);margin-bottom:8px;">Tell us more</label>' +
+          '<textarea name="message" placeholder="Briefly describe your project or requirements..." rows="4" style="width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 16px;color:#F0EEE8;font-size:0.9rem;font-family:Outfit,sans-serif;outline:none;resize:vertical;" class="dn-qinput"></textarea></div>' +
+          '<button type="submit" id="dn-quote-submit" style="width:100%;background:#C49A3C;color:#080808;border:none;border-radius:999px;padding:16px;font-family:Outfit,sans-serif;font-size:0.82rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:all 0.3s;display:flex;align-items:center;justify-content:center;gap:10px;">Send Request <svg width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2.5\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><line x1=\'22\' y1=\'2\' x2=\'11\' y2=\'13\'></line><polygon points=\'22 2 15 22 11 13 2 9 22 2\'></polygon></svg></button>' +
+        '</form>' +
+      '</div>';
+    document.body.appendChild(modal);
+
+    // Style inputs on focus
+    modal.querySelectorAll('.dn-qinput').forEach(function(el) {
+      el.addEventListener('focus', function() { this.style.borderColor = 'rgba(196,154,60,0.5)'; this.style.boxShadow = '0 0 0 3px rgba(196,154,60,0.08)'; });
+      el.addEventListener('blur', function() { this.style.borderColor = 'rgba(255,255,255,0.1)'; this.style.boxShadow = 'none'; });
+    });
+
+    function closeModal() { modal.style.display = 'none'; document.body.style.overflow = ''; }
+    document.getElementById('dn-modal-close').addEventListener('click', closeModal);
+    document.getElementById('dn-modal-overlay').addEventListener('click', closeModal);
+
+    // Quote form submit
+    document.getElementById('dn-quote-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      var fd = new FormData(this);
+      var name = fd.get('name'); var email = fd.get('email');
+      if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showToast('Please fill Name and a valid Email.', 'error'); return;
+      }
+      var btn = document.getElementById('dn-quote-submit');
+      btn.disabled = true; btn.textContent = 'Sending...';
+      try {
+        var res = await fetch('/api/quote', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({name:name,email:email,service:fd.get('service'),message:fd.get('message')})});
+        var data = await res.json();
+        showToast(data.message || (data.success ? 'Request sent!' : 'Error, try again.'), data.success ? 'success' : 'error');
+        if (data.success) { this.reset(); closeModal(); }
+      } catch(ex) { showToast('Network error. Email us at info@dfreenovelish.com', 'error'); }
+      finally { btn.disabled = false; btn.innerHTML = 'Send Request <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>'; }
+    });
+
+    // Wire all "Start a Project" / "Get a Quote" / CTA links/buttons to open modal
+    document.querySelectorAll('a.nav-cta, a.mob-cta').forEach(function(el) {
+      // Only intercept on non-contact pages
+      if (el.getAttribute('href') === 'contact-us.html' || el.getAttribute('href') === '/contact-us.html') {
+        el.addEventListener('click', function(ev) { ev.preventDefault(); modal.style.display = 'flex'; document.body.style.overflow = 'hidden'; });
+      }
+    });
+    // Also capture any buttons with these texts
+    document.querySelectorAll('button, a').forEach(function(el) {
+      var txt = (el.textContent || '').trim().toLowerCase();
+      if ((txt === 'get a free quote' || txt === 'start a project' || txt === 'get started' || txt === 'request a quote') && el.tagName !== 'A') {
+        el.addEventListener('click', function(ev) { ev.preventDefault(); modal.style.display = 'flex'; document.body.style.overflow = 'hidden'; });
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() { setupNewsletter(); setupQuoteModal(); });
+  } else {
+    setupNewsletter(); setupQuoteModal();
+  }
+})();
+</script>
+</body>
+</html>

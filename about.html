@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About DFree Novelish — Academic & Business Agency | 6+ Years Experience</title>
+<meta name="description" content="Learn about DFree Novelish — a trusted academic and business solutions agency with 6+ years of experience, 10,000+ projects, and a 98% success rate serving clients worldwide.">
+<meta name="keywords" content="about DFree Novelish, academic agency, business solutions agency, academic writing company, trusted assignment help">
+<meta name="author" content="DFree Novelish">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.dfreenovelish.com/about.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.dfreenovelish.com/about.html">
+<meta property="og:title" content="About DFree Novelish — Academic & Business Agency">
+<meta property="og:description" content="Trusted by thousands worldwide. DFree Novelish delivers excellence in academic support and business solutions.">
+<meta property="og:image" content="https://www.dfreenovelish.com/assets/DFREE-logo.png">
+<meta property="og:site_name" content="DFree Novelish">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ════════════════════════════════════════
+   ROOT VARIABLES — exact match to home page
+════════════════════════════════════════ */
+:root {
+  --gold: #C49A3C;
+  --gold-light: #DDB96A;
+  --gold-dark: #8A6A1E;
+  --gold-glow: rgba(196,154,60,0.10);
+  --gold-border: rgba(196,154,60,0.30);
+  --bg: #080808;
+  --surface: #0F0F0F;
+  --surface2: #161616;
+  --text: #F0EEE8;
+  --muted: #6B6860;
+  --border: rgba(255,255,255,0.07);
+  --ff-serif: 'Cormorant Garamond', serif;
+  --ff-sans: 'Outfit', sans-serif;
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 22px;
+  --r-xl: 30px;
+  --r-pill: 999px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--ff-sans);
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; }
+a { text-decoration: none; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 4px; }
+
+/* ════════════════════════════════════════
+   NAVBAR
+════════════════════════════════════════ */
+#navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 900;
+  padding: 22px 0;
+  transition: all 0.5s ease;
+  border-bottom: 1px solid transparent;
+}
+#navbar.scrolled {
+  background: rgba(8,8,8,0.92);
+  backdrop-filter: blur(20px);
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner {
+  max-width: 1300px; margin: 0 auto;
+  padding: 0 48px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-logo { display: flex; align-items: center; gap: 14px; }
+.nav-logo-placeholder {
+  width: 40px; height: 40px;
+  border: 1.5px solid var(--gold);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--ff-serif); font-size: 1.3rem; font-weight: 600;
+  color: var(--gold); background: rgba(196,154,60,0.08);
+}
+.nav-logo-name { font-family: var(--ff-serif); font-size: 1.4rem; font-weight: 500; color: var(--text); letter-spacing: 0.02em; }
+.nav-logo-name span { color: var(--gold); }
+.nav-links { display: flex; align-items: center; gap: 2px; list-style: none; }
+.nav-links li a {
+  font-size: 0.75rem; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(240,238,232,0.5);
+  padding: 8px 16px; border-radius: 8px;
+  display: block; transition: all 0.25s;
+}
+.nav-links li a:hover,
+.nav-links li a.active { color: var(--text); background: rgba(255,255,255,0.05); }
+.nav-links li a.active { color: var(--gold); }
+.nav-drop { position: relative; }
+.nav-drop-menu {
+  position: absolute; top: calc(100% + 8px); left: 0;
+  background: rgba(12,12,12,0.98); backdrop-filter: blur(20px);
+  border: 1px solid var(--border); border-radius: var(--r-md);
+  padding: 8px; min-width: 200px; list-style: none;
+  opacity: 0; visibility: hidden; transform: translateY(10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 24px 48px rgba(0,0,0,0.6); z-index: 1001;
+}
+.nav-drop:hover .nav-drop-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+.nav-drop-menu li a { display: block; padding: 9px 14px; font-size: 0.78rem; letter-spacing: 0.04em; text-transform: none; border-radius: 8px; }
+.nav-cta-group { display: flex; align-items: center; gap: 12px; }
+.nav-cta {
+  font-family: var(--ff-sans); font-size: 0.75rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--text); padding: 10px 24px;
+  border: 1px solid var(--gold-border); border-radius: var(--r-pill);
+  background: rgba(196,154,60,0.07); transition: all 0.35s;
+}
+.nav-cta:hover { background: var(--gold); color: #080808; border-color: var(--gold); }
+.hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px; padding: 10px; cursor: pointer;
+}
+.hamburger span { display: block; width: 20px; height: 1.5px; background: var(--text); border-radius: 2px; transition: all 0.3s; }
+.hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.mobile-menu {
+  position: fixed; inset: 0; z-index: 850;
+  background: rgba(8,8,8,0.98); backdrop-filter: blur(20px);
+  padding: 100px 40px 60px;
+  transform: translateX(100%); transition: transform 0.5s ease; overflow-y: auto;
+}
+.mobile-menu.open { transform: translateX(0); }
+.mob-list { list-style: none; }
+.mob-list li { border-bottom: 1px solid var(--border); }
+.mob-list li a { display: block; padding: 20px 0; font-family: var(--ff-serif); font-size: 2rem; font-weight: 400; color: rgba(240,238,232,0.75); transition: color 0.25s; }
+.mob-list li a:hover { color: var(--gold); }
+.mob-cta { display: inline-block; margin-top: 40px; font-family: var(--ff-sans); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #080808; background: var(--gold); padding: 16px 44px; border-radius: var(--r-pill); transition: all 0.3s; }
+.mob-cta:hover { background: var(--gold-light); }
+
+/* ════════════════════════════════════════
+   REUSABLE UTILITIES
+════════════════════════════════════════ */
+.container { max-width: 1300px; margin: 0 auto; padding: 0 48px; }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 0.68rem; font-weight: 600;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 16px;
+}
+.eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--gold); }
+.sec-title {
+  font-family: var(--ff-serif);
+  font-size: clamp(2rem, 3.5vw, 3.4rem);
+  font-weight: 400; line-height: 1.1; color: var(--text);
+}
+.sec-title em { font-style: italic; color: var(--gold); }
+.sec-sub { font-size: 0.95rem; color: var(--muted); line-height: 1.78; font-weight: 300; margin-top: 14px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--ff-sans); font-size: 0.82rem; font-weight: 600;
+  letter-spacing: 0.05em; text-transform: uppercase;
+  padding: 15px 34px; border-radius: var(--r-pill);
+  cursor: pointer; border: none; transition: all 0.35s ease;
+}
+.btn-gold { background: var(--gold); color: #080808; }
+.btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(196,154,60,0.25); color: #080808; }
+.btn-ghost { background: transparent; border: 1px solid rgba(255,255,255,0.12); color: rgba(240,238,232,0.65); }
+.btn-ghost:hover { border-color: var(--gold-border); color: var(--gold); background: var(--gold-glow); }
+
+/* Reveal animation */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.9s cubic-bezier(0.16,1,0.3,1), transform 0.9s cubic-bezier(0.16,1,0.3,1); }
+.reveal.active { opacity: 1; transform: translateY(0); }
+.d1 { transition-delay: 0.1s; } .d2 { transition-delay: 0.2s; } .d3 { transition-delay: 0.3s; } .d4 { transition-delay: 0.4s; }
+
+/* ════════════════════════════════════════
+   HERO
+════════════════════════════════════════ */
+#about-hero {
+  min-height: 100vh;
+  display: flex; align-items: center;
+  padding: 120px 0 80px;
+  position: relative; overflow: hidden;
+}
+.hero-noise {
+  position: absolute; inset: 0; z-index: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  background-size: 180px; opacity: 0.6;
+}
+.hero-radial {
+  position: absolute; inset: 0; z-index: 1;
+  background: radial-gradient(ellipse 60% 70% at 35% 45%, rgba(196,154,60,0.07) 0%, transparent 70%);
+}
+.hero-lines {
+  position: absolute; inset: 0; z-index: 1;
+  background-image: linear-gradient(rgba(196,154,60,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(196,154,60,0.04) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(ellipse 80% 80% at 35% 45%, black 0%, transparent 100%);
+}
+.hero-inner-about {
+  max-width: 1300px; margin: 0 auto; padding: 0 48px;
+  position: relative; z-index: 2;
+  display: grid; grid-template-columns: 55% 45%;
+  gap: 60px; align-items: center;
+}
+.hero-h1 {
+  font-family: var(--ff-serif); font-size: clamp(3rem, 5.5vw, 5.5rem);
+  font-weight: 400; line-height: 1.05; letter-spacing: -0.01em;
+  color: var(--text); margin-bottom: 28px;
+}
+.hero-h1 em { font-style: italic; color: var(--gold); }
+.hero-sub {
+  font-size: 1rem; line-height: 1.8; font-weight: 300;
+  color: rgba(240,238,232,0.5); max-width: 460px; margin-bottom: 20px;
+}
+.hero-btns { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: 24px; }
+
+.hero-stats {
+  display: flex; align-items: center; gap: 32px;
+  margin-top: 56px; padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+.hero-stat-val { font-family: var(--ff-serif); font-size: 2.2rem; font-weight: 500; color: var(--gold); }
+.hero-stat-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+.hero-divider { width: 1px; height: 44px; background: var(--border); }
+
+.hero-right { position: relative; }
+.hero-img-wrap { position: relative; height: 560px; }
+.hero-img-main {
+  width: 90%; height: 100%; object-fit: cover;
+  border-radius: var(--r-xl);
+  border: 1px solid rgba(255,255,255,0.07);
+  box-shadow: 0 48px 96px rgba(0,0,0,0.6);
+  margin-left: auto;
+}
+.hero-float {
+  position: absolute; z-index: 3;
+  background: rgba(10,10,10,0.88); backdrop-filter: blur(16px);
+  border: 1px solid rgba(196,154,60,0.2);
+  border-radius: var(--r-md); padding: 18px 22px;
+}
+.hero-float.f1 { bottom: 60px; left: -10px; animation: floatY 4s ease-in-out infinite; }
+.hero-float.f2 { top: 40px; right: 7%; animation: floatY 4s 2s ease-in-out infinite; }
+@keyframes floatY { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+.float-val { font-family: var(--ff-serif); font-size: 1.8rem; color: var(--gold); line-height: 1; }
+.float-lbl { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(240,238,232,0.4); margin-top: 6px; }
+
+/* ════════════════════════════════════════
+   MARQUEE
+════════════════════════════════════════ */
+.marquee-strip { background: var(--gold); padding: 16px 0; overflow: hidden; }
+.marquee-track { display: flex; gap: 0; animation: marquee 30s linear infinite; width: max-content; }
+.marquee-item { display: flex; align-items: center; gap: 28px; font-family: var(--ff-serif); font-size: 1.25rem; font-style: italic; font-weight: 400; color: #080808; white-space: nowrap; padding: 0 28px; }
+.marquee-sep { font-style: normal; opacity: 0.4; }
+@keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+
+/* ════════════════════════════════════════
+   STORY SECTION
+════════════════════════════════════════ */
+#our-story {
+  padding: 130px 0;
+  background: #F8F6F1;
+  color: #1A1814;
+}
+.story-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 80px; align-items: center; margin-top: 72px;
+}
+.story-img-col { position: relative; }
+.story-img-main {
+  width: 100%; height: 500px; object-fit: cover;
+  border-radius: var(--r-xl);
+  box-shadow: 0 40px 80px rgba(0,0,0,0.12);
+}
+.story-img-overlay {
+  position: absolute; bottom: -24px; right: -24px;
+  width: 200px; height: 200px;
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  border: 4px solid #F8F6F1;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+.story-img-overlay img { width: 100%; height: 100%; object-fit: cover; }
+.story-badge {
+  position: absolute; top: 24px; left: -20px;
+  background: var(--gold); color: #080808;
+  border-radius: var(--r-md); padding: 16px 20px;
+  text-align: center; box-shadow: 0 12px 32px rgba(196,154,60,0.35);
+}
+.story-badge-num { font-family: var(--ff-serif); font-size: 2rem; font-weight: 600; line-height: 1; }
+.story-badge-lbl { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-top: 4px; }
+.story-text-col .sec-title { color: #1A1814; }
+.story-text-col .sec-sub { color: #6B6458; }
+.story-para { font-size: 0.95rem; color: #6B6458; line-height: 1.85; font-weight: 300; margin-top: 20px; }
+.story-checks { margin-top: 36px; display: flex; flex-direction: column; gap: 16px; }
+.story-check {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 18px 20px; border-radius: var(--r-md);
+  background: #fff; border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  transition: all 0.3s;
+}
+.story-check:hover { border-color: var(--gold-border); transform: translateX(6px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+.check-icon {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: rgba(196,154,60,0.12);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; color: var(--gold); font-size: 0.9rem;
+}
+.check-text h5 { font-family: var(--ff-serif); font-size: 1.05rem; color: #1A1814; font-weight: 500; margin-bottom: 4px; }
+.check-text p { font-size: 0.82rem; color: #6B6458; font-weight: 300; line-height: 1.5; }
+
+/* ════════════════════════════════════════
+   WHY US
+════════════════════════════════════════ */
+#why-us {
+  background: var(--bg);
+  color: var(--text);
+}
+.why-outer {
+  max-width: 1300px; margin: 0 auto; padding: 0 48px;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 0; align-items: start;
+}
+.why-sticky {
+  position: sticky; top: 0; height: 100vh;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 80px 60px 80px 0;
+  border-right: 1px solid var(--border);
+}
+.why-sticky-tag { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); display: flex; align-items: center; gap: 10px; margin-bottom: 24px; }
+.why-sticky-tag::before { content: ''; width: 24px; height: 1px; background: var(--gold); }
+.why-sticky-h { font-family: var(--ff-serif); font-size: clamp(2rem, 3.2vw, 3.4rem); font-weight: 400; line-height: 1.08; color: var(--text); margin-bottom: 56px; }
+.why-sticky-h em { font-style: italic; color: var(--gold); }
+.stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.stat-box {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-xl); padding: 36px 28px;
+  transition: all 0.4s; position: relative; overflow: hidden;
+}
+.stat-box::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--gold), transparent); opacity: 0; transition: opacity 0.4s; }
+.stat-box:hover { border-color: var(--gold-border); transform: translateY(-4px); }
+.stat-box:hover::after { opacity: 1; }
+.stat-box.wide { grid-column: span 2; background: linear-gradient(135deg, rgba(196,154,60,0.12), var(--surface)); border-color: var(--gold-border); }
+.stat-num { font-family: var(--ff-serif); font-size: 3rem; font-weight: 400; line-height: 1; color: var(--gold); margin-bottom: 10px; }
+.stat-box.wide .stat-num { font-size: 2.2rem; color: var(--text); }
+.stat-lbl { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.stat-box.wide .stat-sub { font-size: 0.88rem; color: var(--muted); line-height: 1.7; font-weight: 300; margin-top: 8px; }
+.why-scroll-col { padding: 120px 0 120px 60px; }
+.why-item {
+  padding: 48px 0; border-bottom: 1px solid var(--border);
+  opacity: 0.35; transition: opacity 0.6s ease;
+  display: grid; grid-template-columns: 56px 1fr;
+  gap: 24px; align-items: start;
+}
+.why-item:first-child { padding-top: 0; }
+.why-item.in-view { opacity: 1; }
+.why-icon { width: 52px; height: 52px; border-radius: 14px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: var(--gold); flex-shrink: 0; transition: all 0.4s; }
+.why-item.in-view .why-icon { background: var(--gold-glow); border-color: var(--gold-border); }
+.why-item h4 { font-family: var(--ff-serif); font-size: 1.45rem; color: var(--text); margin-bottom: 10px; font-weight: 400; }
+.why-item p { font-size: 0.9rem; color: var(--muted); line-height: 1.78; font-weight: 300; }
+
+/* ════════════════════════════════════════
+   VALUES SECTION
+════════════════════════════════════════ */
+#values {
+  padding: 130px 0;
+  background: var(--bg);
+}
+.values-head { margin-bottom: 72px; }
+.values-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.value-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-xl); padding: 48px 36px;
+  position: relative; overflow: hidden;
+  transition: all 0.4s;
+}
+.value-card::before { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: linear-gradient(to right, transparent, var(--gold), transparent); transform: scaleX(0); transition: transform 0.5s ease; }
+.value-card:hover { transform: translateY(-8px); border-color: var(--gold-border); box-shadow: 0 24px 48px rgba(0,0,0,0.4); }
+.value-card:hover::before { transform: scaleX(1); }
+.value-num {
+  font-family: var(--ff-serif); font-size: 4rem; font-weight: 400;
+  color: rgba(196,154,60,0.12); line-height: 1;
+  position: absolute; top: 20px; right: 28px;
+}
+.value-icon { width: 52px; height: 52px; border-radius: 14px; border: 1px solid var(--gold-border); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: var(--gold); margin-bottom: 28px; background: var(--gold-glow); }
+.value-title { font-family: var(--ff-serif); font-size: 1.55rem; color: var(--text); margin-bottom: 16px; font-weight: 400; }
+.value-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.78; font-weight: 300; }
+
+/* ════════════════════════════════════════
+   MILESTONES
+════════════════════════════════════════ */
+#milestones {
+  padding: 130px 0;
+  background: #F8F6F1;
+  color: #1A1814;
+}
+.milestones-head { text-align: center; max-width: 560px; margin: 0 auto 80px; }
+.milestones-head .eyebrow { justify-content: center; }
+.milestones-head .sec-title { color: #1A1814; }
+.timeline {
+  position: relative; padding-left: 0;
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 40px 80px;
+}
+.timeline::before {
+  content: ''; position: absolute;
+  top: 0; bottom: 0; left: 50%;
+  width: 1px; background: rgba(196,154,60,0.25);
+  transform: translateX(-50%);
+}
+.tl-item {
+  padding: 36px; background: #fff;
+  border: 1px solid rgba(0,0,0,0.07);
+  border-radius: var(--r-xl);
+  position: relative;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+  transition: all 0.4s;
+}
+.tl-item:hover { transform: translateY(-6px); border-color: var(--gold-border); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+.tl-year {
+  font-family: var(--ff-serif); font-size: 0.78rem; font-style: italic;
+  color: var(--gold); margin-bottom: 12px; font-weight: 400;
+  letter-spacing: 0.05em;
+}
+.tl-title { font-family: var(--ff-serif); font-size: 1.3rem; color: #1A1814; font-weight: 500; margin-bottom: 10px; }
+.tl-desc { font-size: 0.85rem; color: #6B6458; line-height: 1.72; font-weight: 300; }
+.tl-dot {
+  position: absolute; top: 40px; right: -47px;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--gold); border: 3px solid #F8F6F1;
+  box-shadow: 0 0 0 2px var(--gold);
+  z-index: 2;
+}
+.tl-item:nth-child(even) .tl-dot { right: auto; left: -47px; }
+
+/* ════════════════════════════════════════
+   CTA BAND
+════════════════════════════════════════ */
+#cta-band {
+  background: #F8F6F1;
+  padding: 0 0 130px;
+  text-align: center;
+}
+.cta-inner { max-width: 600px; margin: 0 auto; }
+.cta-inner .eyebrow { justify-content: center; }
+.cta-h { font-family: var(--ff-serif); font-size: clamp(2.2rem, 3.5vw, 3.6rem); font-weight: 400; color: #1A1814; margin: 16px 0 20px; }
+.cta-h em { color: var(--gold); }
+.cta-sub { font-size: 0.95rem; color: #6B6458; line-height: 1.78; margin-bottom: 44px; font-weight: 300; }
+.cta-btns { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; }
+
+/* ════════════════════════════════════════
+   FOOTER
+════════════════════════════════════════ */
+#footer {
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  padding: 80px 0 0;
+  color: var(--text);
+}
+.footer-nl {
+  margin-bottom: 72px;
+  background: rgba(196,154,60,0.05);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--r-xl);
+  padding: 40px 48px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 32px; flex-wrap: wrap;
+}
+.footer-nl p { font-family: var(--ff-serif); font-size: 1.4rem; font-style: italic; color: var(--text); margin-bottom: 5px; }
+.footer-nl span { font-size: 0.82rem; color: var(--muted); }
+.footer-nl-form { display: flex; gap: 10px; flex-wrap: wrap; }
+.footer-nl-form input { background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: var(--r-pill); padding: 12px 24px; color: var(--text); font-size: 0.88rem; font-family: var(--ff-sans); outline: none; min-width: 240px; transition: border-color 0.3s; }
+.footer-nl-form input::placeholder { color: rgba(240,238,232,0.3); }
+.footer-nl-form input:focus { border-color: var(--gold); }
+.footer-nl-form button { background: var(--gold); color: #080808; border: none; border-radius: var(--r-pill); padding: 12px 28px; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; font-family: var(--ff-sans); transition: all 0.3s; }
+.footer-nl-form button:hover { background: var(--gold-light); }
+.footer-grid { display: grid; grid-template-columns: 2.2fr 1fr 1fr 1fr; gap: 60px; padding-bottom: 60px; border-bottom: 1px solid var(--border); }
+.footer-brand-name { font-family: var(--ff-serif); font-size: 1.6rem; font-weight: 400; color: var(--text); margin-bottom: 16px; }
+.footer-brand-name span { color: var(--gold); }
+.footer-brand p { font-size: 0.86rem; color: var(--muted); line-height: 1.82; font-weight: 300; max-width: 280px; }
+.footer-socials { display: flex; gap: 10px; margin-top: 28px; }
+.footer-socials a { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 0.68rem; font-weight: 700; color: var(--muted); transition: all 0.3s; }
+.footer-socials a:hover { border-color: var(--gold); color: var(--gold); background: var(--gold-glow); }
+.footer-col-hd { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,238,232,0.3); margin-bottom: 24px; display: flex; align-items: center; gap: 8px; }
+.footer-col-hd::before { content: ''; width: 14px; height: 1px; background: var(--gold); }
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 14px; }
+.footer-links a { font-size: 0.86rem; color: var(--muted); font-weight: 300; transition: all 0.25s; }
+.footer-links a:hover { color: rgba(240,238,232,0.85); padding-left: 4px; }
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; padding: 24px 0; flex-wrap: wrap; gap: 16px; }
+.footer-bottom p { font-size: 0.8rem; color: rgba(240,238,232,0.25); font-weight: 300; }
+.footer-bottom .tag { font-family: var(--ff-serif); font-style: italic; color: var(--gold); font-size: 0.95rem; }
+
+/* ════════════════════════════════════════
+   RESPONSIVE
+════════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .hero-inner-about { grid-template-columns: 1fr; gap: 56px; }
+  .hero-img-wrap { height: 420px; }
+  .hero-img-main { width: 100%; }
+  .story-grid { grid-template-columns: 1fr; gap: 60px; }
+  .story-img-overlay { right: 0; bottom: -16px; }
+  .values-grid { grid-template-columns: 1fr 1fr; }
+  .why-outer { grid-template-columns: 1fr; }
+  .why-sticky { position: static; height: auto; border-right: none; border-bottom: 1px solid var(--border); padding: 80px 0 60px; }
+  .why-scroll-col { padding: 60px 0; }
+  .timeline { grid-template-columns: 1fr; gap: 24px; }
+  .timeline::before { display: none; }
+  .tl-dot { display: none; }
+}
+@media (max-width: 768px) {
+  .nav-links, .nav-cta { display: none !important; }
+  .hamburger { display: flex; }
+  .container, .nav-inner { padding: 0 24px; }
+  .hero-inner-about { padding: 0 24px; }
+  .why-outer { padding: 0 24px; }
+  .values-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .footer-nl { flex-direction: column; padding: 32px; }
+  #about-hero { min-height: auto; padding: 120px 0 60px; }
+}
+@media (max-width: 480px) {
+  .stats-grid { grid-template-columns: 1fr; }
+  .stat-box.wide { grid-column: span 1; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .hero-stats { gap: 20px; }
+}
+
+/* ── Logo Image ── */
+.nav-logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+.footer-logo-img {
+  height: 50px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+.nav-logo-placeholder { display: none !important; }
+.nav-logo-name { display: none !important; }
+.footer-brand-name { display: none !important; }
+
+</style>
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/DFREE-logo.png" alt="DFree Novelish" class="nav-logo-img">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-drop">
+        <a href="about.html" class="active">About ▾</a>
+        <ul class="nav-drop-menu">
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="chairman-msg.html">Chairman's Message</a></li>
+          <li><a href="our-team.html">Our Team</a></li>
+          <li><a href="our-advisor.html">Our Advisors</a></li>
+          <li><a href="our-client.html">Our Clients</a></li>
+          <li><a href="certifications.html">Awards &amp; Certificates</a></li>
+        </ul>
+      </li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="eventsandconf.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="sample-work.html">Sample Work</a></li>
+      <li><a href="contact-us.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta-group">
+      <a href="contact-us.html" class="nav-cta">Start a Project</a>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="mob-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About Us</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="eventsandconf.html">Events</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="sample-work.html">Sample Work</a></li>
+    <li><a href="contact-us.html">Contact</a></li>
+  </ul>
+  <a href="contact-us.html" class="mob-cta">Start a Project</a>
+</div>
+
+
+<!-- ══ HERO ══ -->
+<section id="about-hero">
+  <div class="hero-noise"></div>
+  <div class="hero-radial"></div>
+  <div class="hero-lines"></div>
+  <div class="hero-inner-about">
+    <div class="hero-left">
+      <p class="eyebrow reveal">Who We Are</p>
+      <h1 class="hero-h1 reveal d1">
+        Driven by<br>
+        <em>Excellence,</em><br>
+        Built on Trust.
+      </h1>
+      <p class="hero-sub reveal d2">
+        A dynamic team of academic specialists and business innovators, united by a single mission — delivering uncompromising quality to students and enterprises worldwide.
+      </p>
+      <p class="hero-sub reveal d2" style="margin-top: -8px;">
+        Our commitment to integrity, precision, and customer satisfaction guides everything we do — from every assignment to every digital solution.
+      </p>
+      <div class="hero-btns reveal d3">
+        <a href="#our-story" class="btn btn-gold">Our Story →</a>
+        <a href="contact-us.html" class="btn btn-ghost">Start a Project</a>
+      </div>
+      <div class="hero-stats reveal d4">
+        <div class="hero-stat">
+          <div class="hero-stat-val">10K+</div>
+          <div class="hero-stat-label">Projects Delivered</div>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-stat">
+          <div class="hero-stat-val">98%</div>
+          <div class="hero-stat-label">Success Rate</div>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-stat">
+          <div class="hero-stat-val">6 Yrs</div>
+          <div class="hero-stat-label">Experience</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right reveal d2">
+      <div class="hero-img-wrap">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="DFree Novelish Team Collaboration" class="hero-img-main" loading="eager">
+        <div class="hero-float f1">
+          <div class="float-val">100%</div>
+          <div class="float-lbl">Originality Guaranteed</div>
+        </div>
+        <div class="hero-float f2">
+          <div class="float-val">24/7</div>
+          <div class="float-lbl">Expert Support</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MARQUEE ══ -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span class="marquee-item">Academic Excellence <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Business Innovation <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">6+ Years of Trust <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">10,000+ Projects <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Global Reach <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">98% Success Rate <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Academic Excellence <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Business Innovation <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">6+ Years of Trust <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">10,000+ Projects <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Global Reach <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">98% Success Rate <span class="marquee-sep">◆</span></span>
+  </div>
+</div>
+
+
+<!-- ══ OUR STORY ══ -->
+<section id="our-story">
+  <div class="container">
+    <div class="story-grid">
+      <div class="story-img-col reveal">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80" alt="DFree Novelish Story" class="story-img-main">
+        <div class="story-img-overlay">
+          <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=400&q=80" alt="Office">
+        </div>
+        <div class="story-badge">
+          <div class="story-badge-num">6+</div>
+          <div class="story-badge-lbl">Years of<br>Excellence</div>
+        </div>
+      </div>
+      <div class="story-text-col">
+        <p class="eyebrow reveal">Our Story</p>
+        <h2 class="sec-title reveal d1">From a Vision to a<br><em>Global Agency</em></h2>
+        <p class="sec-sub reveal d2">We started with a simple belief: that every student and every business deserves expert-level support without compromise.</p>
+        <p class="story-para reveal d2">Founded over six years ago, DFree Novelish began as a small team of passionate educators and digital strategists. Today, we've grown into a trusted global agency — having served thousands of clients across every continent, delivering academic excellence and business growth hand-in-hand.</p>
+        <div class="story-checks reveal d3">
+          <div class="story-check">
+            <div class="check-icon">✦</div>
+            <div class="check-text">
+              <h5>Mission-Driven Approach</h5>
+              <p>Every project we take on is guided by a genuine commitment to your goals, not just our bottom line.</p>
+            </div>
+          </div>
+          <div class="story-check">
+            <div class="check-icon">◎</div>
+            <div class="check-text">
+              <h5>Rooted in Integrity</h5>
+              <p>Transparent pricing, honest timelines, and zero compromise on quality — always.</p>
+            </div>
+          </div>
+          <div class="story-check">
+            <div class="check-icon">⬡</div>
+            <div class="check-text">
+              <h5>Globally Trusted</h5>
+              <p>Clients from the US, UK, UAE, Australia, India, and beyond — one consistent standard of excellence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ WHY US ══ -->
+<section id="why-us">
+  <div class="why-outer">
+    <div class="why-sticky">
+      <p class="why-sticky-tag">The Standard</p>
+      <h2 class="why-sticky-h">Uncompromising<br><em>Quality</em></h2>
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-num"><span class="counter" data-target="98">0</span>%</div>
+          <div class="stat-lbl">Success Rate</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num"><span class="counter" data-target="6">0</span>+</div>
+          <div class="stat-lbl">Years Active</div>
+        </div>
+        <div class="stat-box wide">
+          <div class="stat-num">10,000+</div>
+          <div class="stat-sub">Projects delivered for students and businesses across every continent — from individual assignments to full enterprise digital solutions.</div>
+        </div>
+      </div>
+    </div>
+    <div class="why-scroll-col">
+      <div class="why-item">
+        <div class="why-icon">✦</div>
+        <div>
+          <h4>Affordable Pricing</h4>
+          <p>Premium quality should never be a luxury. Our competitive pricing ensures every student and business owner can access expert-level support without stretching their budget.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">◎</div>
+        <div>
+          <h4>Fully Customized Offerings</h4>
+          <p>No two clients are alike. We tailor every solution — from academic assignments to full-scale web platforms — to the precise needs and goals of the individual we partner with.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">⬡</div>
+        <div>
+          <h4>Expertise Across All Categories</h4>
+          <p>Our team brings deep, real-world expertise across academic disciplines and digital industries — writers, developers, designers, and marketers working as one cohesive unit.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">◈</div>
+        <div>
+          <h4>Multi-Tier Quality Assurance</h4>
+          <p>Every deliverable passes through multiple quality checks before it reaches you — ensuring flawless execution, complete originality, and results that consistently exceed expectations.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">◇</div>
+        <div>
+          <h4>Deadline Guaranteed, Always</h4>
+          <p>Timing is everything in academics and business. We treat every deadline as sacred — delivering on time, every time, with proactive updates and zero last-minute surprises.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ VALUES ══ -->
+<section id="values">
+  <div class="container">
+    <div class="values-head reveal">
+      <p class="eyebrow">What We Stand For</p>
+      <h2 class="sec-title">Our Core <em>Values</em></h2>
+      <p class="sec-sub" style="max-width:480px; margin-top:14px;">The principles that define how we work, how we communicate, and how we deliver — every single time.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <div class="value-num">01</div>
+        <div class="value-icon">◈</div>
+        <div class="value-title">Integrity Above All</div>
+        <div class="value-desc">Honest communication, transparent pricing, and zero shortcuts. We say what we do, and we do what we say — no exceptions, no excuses.</div>
+      </div>
+      <div class="value-card reveal d1">
+        <div class="value-num">02</div>
+        <div class="value-icon">✦</div>
+        <div class="value-title">Excellence as Standard</div>
+        <div class="value-desc">Good enough is never good enough at DFree. Every deliverable is held to the highest bar — because your goals deserve nothing less than our absolute best.</div>
+      </div>
+      <div class="value-card reveal d2">
+        <div class="value-num">03</div>
+        <div class="value-icon">⬡</div>
+        <div class="value-title">Client-First Always</div>
+        <div class="value-desc">Your success is our success. From your first message to final delivery, every decision we make is centered around your unique needs and ultimate outcomes.</div>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-num">04</div>
+        <div class="value-icon">◎</div>
+        <div class="value-title">Innovation & Adaptability</div>
+        <div class="value-desc">The academic and digital landscapes evolve constantly. We invest in staying ahead — always bringing the freshest ideas, tools, and strategies to your work.</div>
+      </div>
+      <div class="value-card reveal d1">
+        <div class="value-num">05</div>
+        <div class="value-icon">◇</div>
+        <div class="value-title">Complete Confidentiality</div>
+        <div class="value-desc">Your privacy is non-negotiable. Enterprise-grade data security and strict confidentiality protocols protect every detail you share with us, permanently.</div>
+      </div>
+      <div class="value-card reveal d2">
+        <div class="value-num">06</div>
+        <div class="value-icon">▿</div>
+        <div class="value-title">Long-Term Partnership</div>
+        <div class="value-desc">We're not here for a single transaction. We're here to become your trusted partner — someone you return to at every critical stage of your journey.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ MILESTONES ══ -->
+<section id="milestones">
+  <div class="container">
+    <div class="milestones-head reveal">
+      <p class="eyebrow">Our Journey</p>
+      <h2 class="sec-title" style="color:#1A1814;">Key <em>Milestones</em></h2>
+      <p class="sec-sub" style="color:#6B6458; margin-top:14px;">Six years of growth, trust, and expanding impact across the globe.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2018 — The Beginning</div>
+        <div class="tl-title">DFree Novelish Founded</div>
+        <div class="tl-desc">Started as a small academic assistance service, built on a passion for helping students achieve their academic goals with genuine quality and care.</div>
+      </div>
+      <div class="tl-item reveal d1">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2019 — Expanding Reach</div>
+        <div class="tl-title">First 1,000 Projects Delivered</div>
+        <div class="tl-desc">Milestone achievement of 1,000 successful academic projects, establishing a strong reputation for reliability and excellence across multiple disciplines.</div>
+      </div>
+      <div class="tl-item reveal d1">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2020 — New Horizons</div>
+        <div class="tl-title">Business Division Launched</div>
+        <div class="tl-desc">Launched web development and digital marketing services, expanding from academic support into a full-spectrum agency serving businesses worldwide.</div>
+      </div>
+      <div class="tl-item reveal d2">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2021 — Global Growth</div>
+        <div class="tl-title">International Client Expansion</div>
+        <div class="tl-desc">Extended operations to serve clients across the UK, UAE, Australia, Canada, and beyond — becoming a truly global academic and business solutions agency.</div>
+      </div>
+      <div class="tl-item reveal d2">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2023 — Recognition</div>
+        <div class="tl-title">Industry Awards & Certifications</div>
+        <div class="tl-desc">Recognized with multiple industry certifications and client-voted awards for excellence in academic support and digital business services.</div>
+      </div>
+      <div class="tl-item reveal d3">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2024–Present</div>
+        <div class="tl-title">10,000+ Projects & Growing</div>
+        <div class="tl-desc">Surpassed 10,000 successfully completed projects with a 98% client satisfaction rate — and we're only just getting started on the next chapter.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ CTA BAND ══ -->
+<section id="cta-band">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <p class="eyebrow">Initiate Project</p>
+      <h2 class="cta-h">Unlock Your Full<br><em>Potential</em></h2>
+      <p class="cta-sub">Partner with our team today to secure your academic goals or accelerate your business growth. Your next chapter starts here.</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/" class="btn btn-dark" target="_blank">Connect via WhatsApp →</a>
+        <a href="mailto:info@dfreenovelish.com" class="btn btn-outline-light">Send an Email</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ FOOTER ══ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-nl reveal">
+      <div>
+        <p>Stay in the loop.</p>
+        <span>Get insights, updates &amp; exclusive offers — no spam, ever.</span>
+      </div>
+      <div class="footer-nl-form">
+        <input type="email" id="nl-email" placeholder="your@email.com">
+        <button type="button" >Subscribe</button>
+      </div>
+    </div>
+    <div class="footer-grid reveal">
+      <div class="footer-brand">
+        <img src="assets/DFREE-logo.png" alt="DFree Novelish" class="footer-logo-img">
+        <p>An elite agency delivering uncompromising quality in academic support and digital business growth — globally.</p>
+        <div class="footer-socials">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="X / Twitter">X</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-hd">Academic</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Assignment Writing</a></li>
+          <li><a href="services.html">SOP &amp; Resumes</a></li>
+          <li><a href="services.html">Thesis Support</a></li>
+          <li><a href="services.html">Turnitin Checks</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-hd">Business</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Custom Web Dev</a></li>
+          <li><a href="services.html">Social Media</a></li>
+          <li><a href="services.html">E-Learning Tech</a></li>
+          <li><a href="services.html">Brand Identity</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-hd">Connect</div>
+        <ul class="footer-links">
+          <li><a href="contact-us.html">Start a Project</a></li>
+          <li><a href="https://wa.me/" target="_blank" rel="noopener">WhatsApp Support</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="eventsandconf.html">Events &amp; Conferences</a></li>
+          <li><a href="mailto:info@dfreenovelish.com">info@dfreenovelish.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 DFree Novelish. All rights reserved.</p>
+      <p class="tag">Excellence Delivered.</p>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+/* ── Navbar Scroll ── */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 48);
+}, { passive: true });
+
+/* ── Mobile Menu ── */
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+  document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+});
+mobileMenu.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
+
+/* ── Reveal on Scroll ── */
+const reveals = document.querySelectorAll('.reveal');
+const revealIO = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('active'); revealIO.unobserve(e.target); }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => revealIO.observe(el));
+
+/* ── Why Items Scroll Highlight ── */
+const whyItems = document.querySelectorAll('.why-item');
+const whyIO = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    e.target.classList.toggle('in-view', e.isIntersecting);
+  });
+}, { threshold: 0.5, rootMargin: '-10% 0px -10% 0px' });
+whyItems.forEach(el => whyIO.observe(el));
+
+/* ── Counter Animation ── */
+function animCounter(el) {
+  const target = +el.dataset.target;
+  const dur = 2000;
+  const start = performance.now();
+  (function tick(now) {
+    const p = Math.min((now - start) / dur, 1);
+    const ease = 1 - Math.pow(1 - p, 4);
+    el.textContent = Math.floor(ease * target);
+    if (p < 1) requestAnimationFrame(tick);
+    else el.textContent = target;
+  })(performance.now());
+}
+const counterIO = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { animCounter(e.target); counterIO.unobserve(e.target); }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.counter').forEach(el => counterIO.observe(el));
+</script>
+
+
+<script src="/js/chatbot.js"></script>
+
+<script>
+/* ══ DFree Novelish — Universal CTA & Newsletter Handler ══ */
+(function() {
+  function showToast(msg, type) {
+    var existing = document.getElementById('dn-page-toast');
+    if (!existing) {
+      var t = document.createElement('div');
+      t.id = 'dn-page-toast';
+      t.style.cssText = 'position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(80px);background:#0F0F0F;border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:16px 28px;font-size:0.9rem;color:#F0EEE8;z-index:99999;transition:all 0.4s cubic-bezier(0.16,1,0.3,1);opacity:0;display:flex;align-items:center;gap:10px;box-shadow:0 20px 60px rgba(0,0,0,0.6);min-width:260px;justify-content:center;font-family:Outfit,sans-serif;';
+      document.body.appendChild(t);
+      existing = t;
+    }
+    existing.style.borderColor = type === 'success' ? 'rgba(52,211,153,0.4)' : 'rgba(239,68,68,0.4)';
+    existing.innerHTML = '<span style="color:' + (type==='success'?'#34d399':'#ef4444') + ';font-weight:700;">' + (type==='success'?'✓':'✕') + '</span><span>' + msg + '</span>';
+    existing.style.transform = 'translateX(-50%) translateY(0)';
+    existing.style.opacity = '1';
+    setTimeout(function() { existing.style.transform = 'translateX(-50%) translateY(80px)'; existing.style.opacity = '0'; }, 4500);
+  }
+
+  /* Newsletter subscribe button */
+  function setupNewsletter() {
+    var btn = document.getElementById('nl-submit') || document.querySelector('.footer-nl-form button, #footer .footer-nl-form button');
+    var inp = document.getElementById('nl-email') || document.querySelector('.footer-nl-form input[type="email"], #footer input[type="email"]');
+    if (!btn || !inp) return;
+    // Remove any old onclick
+    btn.removeAttribute('onclick');
+    btn.addEventListener('click', async function() {
+      var email = inp.value.trim();
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        inp.style.borderColor = '#ef4444'; inp.focus(); return;
+      }
+      inp.style.borderColor = '';
+      btn.disabled = true; btn.textContent = '...';
+      try {
+        var res = await fetch('/api/newsletter', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({email: email})});
+        var data = await res.json();
+        showToast(data.message || (data.success ? 'Subscribed!' : 'Error, try again.'), data.success ? 'success' : 'error');
+        if (data.success) inp.value = '';
+      } catch(e) { showToast('Error connecting. Try again.', 'error'); }
+      finally { btn.disabled = false; btn.textContent = 'Subscribe'; }
+    });
+  }
+
+  /* Quote / CTA modal for "Start a Project" links that aren't on contact page */
+  function setupQuoteModal() {
+    if (window.location.pathname.includes('contact-us')) return;
+    // Create modal
+    var modal = document.createElement('div');
+    modal.id = 'dn-quote-modal';
+    modal.style.cssText = 'position:fixed;inset:0;z-index:9990;display:none;align-items:center;justify-content:center;padding:20px;';
+    modal.innerHTML = '<div style="position:absolute;inset:0;background:rgba(0,0,0,0.8);backdrop-filter:blur(8px);" id="dn-modal-overlay"></div>' +
+      '<div style="position:relative;z-index:1;background:#0F0F0F;border:1px solid rgba(196,154,60,0.3);border-radius:24px;padding:48px;width:100%;max-width:540px;max-height:90vh;overflow-y:auto;">' +
+        '<button id="dn-modal-close" style="position:absolute;top:20px;right:20px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;color:#F0EEE8;width:36px;height:36px;cursor:pointer;font-size:1.2rem;display:flex;align-items:center;justify-content:center;">&times;</button>' +
+        '<h2 style="font-family:Cormorant Garamond,serif;font-size:2rem;font-weight:400;color:#F0EEE8;margin-bottom:8px;">Start a <em style=\'color:#C49A3C;font-style:italic;\'>Project</em></h2>' +
+        '<p style="font-size:0.88rem;color:#6B6860;margin-bottom:32px;">Tell us what you need and we'll get back to you within 24 hours.</p>' +
+        '<form id="dn-quote-form" novalidate>' +
+          '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;">' +
+            '<div><label style="display:block;font-size:0.7rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(240,238,232,0.4);margin-bottom:8px;">Your Name *</label>' +
+            '<input name="name" type="text" required placeholder="John Doe" style="width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 16px;color:#F0EEE8;font-size:0.9rem;font-family:Outfit,sans-serif;outline:none;" class="dn-qinput"></div>' +
+            '<div><label style="display:block;font-size:0.7rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(240,238,232,0.4);margin-bottom:8px;">Email *</label>' +
+            '<input name="email" type="email" required placeholder="john@email.com" style="width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 16px;color:#F0EEE8;font-size:0.9rem;font-family:Outfit,sans-serif;outline:none;" class="dn-qinput"></div>' +
+          '</div>' +
+          '<div style="margin-bottom:16px;"><label style="display:block;font-size:0.7rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(240,238,232,0.4);margin-bottom:8px;">Service Needed</label>' +
+          '<select name="service" style="width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 16px;color:#F0EEE8;font-size:0.9rem;font-family:Outfit,sans-serif;outline:none;cursor:pointer;" class="dn-qinput">' +
+            '<option value="">— Choose a service —</option>' +
+            '<optgroup label="Academic"><option>Assignment Help</option><option>Research Writing</option><option>SOP &amp; Resumes</option><option>Turnitin Report</option><option>Thesis Support</option><option>Content Writing</option></optgroup>' +
+            '<optgroup label="Business"><option>Web Design &amp; Development</option><option>Social Media Marketing</option><option>Software Development</option><option>iOS App Development</option><option>Digital Ads</option><option>Brand Identity</option></optgroup>' +
+            '<option>Other / General Inquiry</option>' +
+          '</select></div>' +
+          '<div style="margin-bottom:24px;"><label style="display:block;font-size:0.7rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(240,238,232,0.4);margin-bottom:8px;">Tell us more</label>' +
+          '<textarea name="message" placeholder="Briefly describe your project or requirements..." rows="4" style="width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 16px;color:#F0EEE8;font-size:0.9rem;font-family:Outfit,sans-serif;outline:none;resize:vertical;" class="dn-qinput"></textarea></div>' +
+          '<button type="submit" id="dn-quote-submit" style="width:100%;background:#C49A3C;color:#080808;border:none;border-radius:999px;padding:16px;font-family:Outfit,sans-serif;font-size:0.82rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:all 0.3s;display:flex;align-items:center;justify-content:center;gap:10px;">Send Request <svg width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2.5\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><line x1=\'22\' y1=\'2\' x2=\'11\' y2=\'13\'></line><polygon points=\'22 2 15 22 11 13 2 9 22 2\'></polygon></svg></button>' +
+        '</form>' +
+      '</div>';
+    document.body.appendChild(modal);
+
+    // Style inputs on focus
+    modal.querySelectorAll('.dn-qinput').forEach(function(el) {
+      el.addEventListener('focus', function() { this.style.borderColor = 'rgba(196,154,60,0.5)'; this.style.boxShadow = '0 0 0 3px rgba(196,154,60,0.08)'; });
+      el.addEventListener('blur', function() { this.style.borderColor = 'rgba(255,255,255,0.1)'; this.style.boxShadow = 'none'; });
+    });
+
+    function closeModal() { modal.style.display = 'none'; document.body.style.overflow = ''; }
+    document.getElementById('dn-modal-close').addEventListener('click', closeModal);
+    document.getElementById('dn-modal-overlay').addEventListener('click', closeModal);
+
+    // Quote form submit
+    document.getElementById('dn-quote-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      var fd = new FormData(this);
+      var name = fd.get('name'); var email = fd.get('email');
+      if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showToast('Please fill Name and a valid Email.', 'error'); return;
+      }
+      var btn = document.getElementById('dn-quote-submit');
+      btn.disabled = true; btn.textContent = 'Sending...';
+      try {
+        var res = await fetch('/api/quote', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({name:name,email:email,service:fd.get('service'),message:fd.get('message')})});
+        var data = await res.json();
+        showToast(data.message || (data.success ? 'Request sent!' : 'Error, try again.'), data.success ? 'success' : 'error');
+        if (data.success) { this.reset(); closeModal(); }
+      } catch(ex) { showToast('Network error. Email us at info@dfreenovelish.com', 'error'); }
+      finally { btn.disabled = false; btn.innerHTML = 'Send Request <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>'; }
+    });
+
+    // Wire all "Start a Project" / "Get a Quote" / CTA links/buttons to open modal
+    document.querySelectorAll('a.nav-cta, a.mob-cta').forEach(function(el) {
+      // Only intercept on non-contact pages
+      if (el.getAttribute('href') === 'contact-us.html' || el.getAttribute('href') === '/contact-us.html') {
+        el.addEventListener('click', function(ev) { ev.preventDefault(); modal.style.display = 'flex'; document.body.style.overflow = 'hidden'; });
+      }
+    });
+    // Also capture any buttons with these texts
+    document.querySelectorAll('button, a').forEach(function(el) {
+      var txt = (el.textContent || '').trim().toLowerCase();
+      if ((txt === 'get a free quote' || txt === 'start a project' || txt === 'get started' || txt === 'request a quote') && el.tagName !== 'A') {
+        el.addEventListener('click', function(ev) { ev.preventDefault(); modal.style.display = 'flex'; document.body.style.overflow = 'hidden'; });
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() { setupNewsletter(); setupQuoteModal(); });
+  } else {
+    setupNewsletter(); setupQuoteModal();
+  }
+})();
+</script>
+</body>
+</html>

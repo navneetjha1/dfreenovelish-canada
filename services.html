@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Academic Writing, Research, Web Design & More | DFree Novelish</title>
+<meta name="description" content="Explore DFree Novelish services: assignment help, PhD research writing, SOP & resume writing, Turnitin reports, web design, social media marketing, app development, and more.">
+<meta name="keywords" content="assignment help services, research writing services, SOP writing, Turnitin plagiarism report, web design services, social media marketing, iOS app development">
+<meta name="author" content="DFree Novelish">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.dfreenovelish.com/services.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.dfreenovelish.com/services.html">
+<meta property="og:title" content="Services — DFree Novelish Academic & Business Solutions">
+<meta property="og:description" content="From PhD thesis support to custom web design — DFree Novelish offers a full suite of academic and business services.">
+<meta property="og:image" content="https://www.dfreenovelish.com/assets/DFREE-logo.png">
+<meta property="og:site_name" content="DFree Novelish">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ══════════════════════════════════
+   ROOT — Same as Homepage
+══════════════════════════════════ */
+:root {
+  --gold: #C49A3C;
+  --gold-light: #DDB96A;
+  --gold-dark: #8A6A1E;
+  --gold-glow: rgba(196,154,60,0.10);
+  --gold-border: rgba(196,154,60,0.30);
+  --bg: #080808;
+  --surface: #0F0F0F;
+  --surface2: #161616;
+  --text: #F0EEE8;
+  --muted: #6B6860;
+  --border: rgba(255,255,255,0.07);
+  --ff-serif: 'Cormorant Garamond', serif;
+  --ff-sans: 'Outfit', sans-serif;
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 22px;
+  --r-xl: 30px;
+  --r-pill: 999px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--ff-sans);
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; }
+a { text-decoration: none; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 4px; }
+
+/* ══════════════════════════════════
+   NAVBAR — Exact from Homepage
+══════════════════════════════════ */
+#navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 900;
+  padding: 22px 0;
+  transition: all 0.5s ease;
+  border-bottom: 1px solid transparent;
+}
+#navbar.scrolled {
+  background: rgba(8,8,8,0.92);
+  backdrop-filter: blur(20px);
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner {
+  max-width: 1300px; margin: 0 auto;
+  padding: 0 48px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-logo { display: flex; align-items: center; gap: 14px; }
+.nav-logo-placeholder {
+  width: 40px; height: 40px;
+  border: 1.5px solid var(--gold);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--ff-serif); font-size: 1.3rem; font-weight: 600;
+  color: var(--gold);
+  background: rgba(196,154,60,0.08);
+  letter-spacing: -0.02em;
+}
+.nav-logo-name { font-family: var(--ff-serif); font-size: 1.4rem; font-weight: 500; color: var(--text); letter-spacing: 0.02em; }
+.nav-logo-name span { color: var(--gold); }
+.nav-links { display: flex; align-items: center; gap: 2px; list-style: none; }
+.nav-links li a {
+  font-size: 0.75rem; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(240,238,232,0.5);
+  padding: 8px 16px; border-radius: 8px;
+  display: block; transition: all 0.25s;
+}
+.nav-links li a:hover,
+.nav-links li a.active { color: var(--text); background: rgba(255,255,255,0.05); }
+.nav-links li a.active { color: var(--gold); }
+.nav-drop { position: relative; }
+.nav-drop-menu {
+  position: absolute; top: calc(100% + 8px); left: 0;
+  background: rgba(12,12,12,0.98);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 8px; min-width: 200px;
+  list-style: none;
+  opacity: 0; visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 24px 48px rgba(0,0,0,0.6);
+}
+.nav-drop:hover .nav-drop-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+.nav-drop-menu li a { display: block; padding: 9px 14px; font-size: 0.78rem; letter-spacing: 0.04em; text-transform: none; border-radius: 8px; }
+.nav-cta-group { display: flex; align-items: center; gap: 12px; }
+.nav-cta {
+  font-family: var(--ff-sans); font-size: 0.75rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--text); padding: 10px 24px;
+  border: 1px solid var(--gold-border);
+  border-radius: var(--r-pill);
+  background: rgba(196,154,60,0.07);
+  transition: all 0.35s;
+}
+.nav-cta:hover { background: var(--gold); color: #080808; border-color: var(--gold); }
+.hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px; padding: 10px; cursor: pointer;
+}
+.hamburger span { display: block; width: 20px; height: 1.5px; background: var(--text); border-radius: 2px; transition: all 0.3s; }
+.hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.mobile-menu {
+  position: fixed; inset: 0; z-index: 850;
+  background: rgba(8,8,8,0.98); backdrop-filter: blur(20px);
+  padding: 100px 40px 60px;
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+  overflow-y: auto;
+}
+.mobile-menu.open { transform: translateX(0); }
+.mob-list { list-style: none; }
+.mob-list li { border-bottom: 1px solid var(--border); }
+.mob-list li a { display: block; padding: 20px 0; font-family: var(--ff-serif); font-size: 2rem; font-weight: 400; color: rgba(240,238,232,0.75); transition: color 0.25s; }
+.mob-list li a:hover { color: var(--gold); }
+.mob-cta {
+  display: inline-block; margin-top: 40px;
+  font-family: var(--ff-sans); font-size: 0.85rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: #080808; background: var(--gold);
+  padding: 16px 44px; border-radius: var(--r-pill);
+  transition: all 0.3s;
+}
+.mob-cta:hover { background: var(--gold-light); }
+
+/* ══════════════════════════════════
+   PAGE HERO
+══════════════════════════════════ */
+#page-hero {
+  min-height: 72vh;
+  display: flex; align-items: center;
+  padding: 140px 0 80px;
+  position: relative; overflow: hidden;
+}
+.hero-noise {
+  position: absolute; inset: 0; z-index: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  background-size: 180px; opacity: 0.6;
+}
+.hero-radial {
+  position: absolute; inset: 0; z-index: 1;
+  background: radial-gradient(ellipse 70% 80% at 50% 60%, rgba(196,154,60,0.06) 0%, transparent 70%);
+}
+.hero-lines {
+  position: absolute; inset: 0; z-index: 1;
+  background-image: linear-gradient(rgba(196,154,60,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(196,154,60,0.04) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 60%, black 0%, transparent 100%);
+}
+.hero-inner {
+  max-width: 1300px; margin: 0 auto; padding: 0 48px;
+  position: relative; z-index: 2;
+  text-align: center;
+}
+.hero-tag {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 0.7rem; font-weight: 600;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 28px;
+}
+.hero-tag::before, .hero-tag::after { content: ''; width: 28px; height: 1px; background: var(--gold); }
+.hero-h1 {
+  font-family: var(--ff-serif); font-size: clamp(3.4rem, 6vw, 6.5rem);
+  font-weight: 300; line-height: 1.05; letter-spacing: -0.01em;
+  color: var(--text); margin-bottom: 28px;
+}
+.hero-h1 em { font-style: italic; color: var(--gold); }
+.hero-sub {
+  font-size: 1.05rem; line-height: 1.8; font-weight: 300;
+  color: rgba(240,238,232,0.5);
+  max-width: 600px; margin: 0 auto 56px;
+}
+.hero-stats-row {
+  display: inline-flex; align-items: center; gap: 40px;
+  padding: 24px 48px;
+  background: rgba(255,255,255,0.025);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  backdrop-filter: blur(10px);
+}
+.hs-val { font-family: var(--ff-serif); font-size: 1.8rem; font-weight: 500; color: var(--gold); line-height: 1; }
+.hs-lbl { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-top: 5px; }
+.hs-div { width: 1px; height: 36px; background: var(--border); }
+
+/* ══════════════════════════════════
+   MARQUEE
+══════════════════════════════════ */
+.marquee-strip { background: var(--gold); padding: 16px 0; overflow: hidden; }
+.marquee-track { display: flex; gap: 0; animation: marquee 30s linear infinite; width: max-content; }
+.marquee-item { display: flex; align-items: center; gap: 28px; font-family: var(--ff-serif); font-size: 1.25rem; font-style: italic; font-weight: 400; color: #080808; white-space: nowrap; padding: 0 28px; }
+.marquee-sep { font-style: normal; opacity: 0.4; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* ══════════════════════════════════
+   SERVICES SECTION — LIGHT BG
+══════════════════════════════════ */
+#services-catalog {
+  background: #F8F6F1;
+  color: #1A1814;
+  padding: 120px 0 140px;
+}
+.container { max-width: 1300px; margin: 0 auto; padding: 0 48px; }
+
+/* Section head */
+.scat-head { text-align: center; margin-bottom: 72px; }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 0.68rem; font-weight: 600;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 16px;
+}
+.eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--gold); }
+.sec-title { font-family: var(--ff-serif); font-size: clamp(2.4rem, 3.8vw, 3.8rem); font-weight: 400; line-height: 1.08; color: #1A1814; margin-bottom: 16px; }
+.sec-title em { font-style: italic; color: var(--gold); }
+.sec-sub { font-size: 0.95rem; color: #6B6458; line-height: 1.75; font-weight: 300; max-width: 520px; margin: 0 auto; }
+
+/* Filter Tabs */
+.filter-row { display: flex; justify-content: center; margin-bottom: 60px; gap: 8px; flex-wrap: wrap; }
+.filter-btn {
+  font-family: var(--ff-sans); font-size: 0.75rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 12px 30px; border: 1px solid rgba(0,0,0,0.12);
+  border-radius: var(--r-pill);
+  background: transparent; color: #6B6458;
+  cursor: pointer; transition: all 0.3s ease;
+}
+.filter-btn:hover { background: rgba(0,0,0,0.05); color: #1A1814; }
+.filter-btn.active { background: #1A1814; color: #F8F6F1; border-color: #1A1814; box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+
+/* Grid */
+.svc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  transition: all 0.4s ease;
+}
+
+/* Service Card */
+.svc-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.07);
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.16,1,0.3,1);
+  cursor: pointer;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+  display: flex; flex-direction: column;
+}
+.svc-card:hover { transform: translateY(-12px); box-shadow: 0 32px 64px rgba(0,0,0,0.10); border-color: var(--gold-border); }
+.svc-card.hide { display: none; }
+
+/* Image area */
+.svc-img-wrap { height: 220px; overflow: hidden; position: relative; flex-shrink: 0; }
+.svc-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s ease; }
+.svc-card:hover .svc-img { transform: scale(1.07); }
+.svc-badge {
+  position: absolute; top: 18px; left: 18px;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(10px);
+  border-radius: var(--r-pill);
+  padding: 5px 14px;
+  font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  color: #1A1814;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+.svc-badge.digital { background: rgba(196,154,60,0.92); color: #080808; }
+
+/* Card body */
+.svc-body { padding: 30px 32px 34px; display: flex; flex-direction: column; flex-grow: 1; }
+.svc-num { font-family: var(--ff-serif); font-size: 0.88rem; color: var(--gold); font-style: italic; margin-bottom: 10px; }
+.svc-title { font-family: var(--ff-serif); font-size: 1.65rem; color: #1A1814; margin-bottom: 12px; font-weight: 400; line-height: 1.2; }
+.svc-desc { font-size: 0.875rem; color: #6B6458; line-height: 1.74; font-weight: 300; flex-grow: 1; margin-bottom: 28px; }
+.svc-footer { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(0,0,0,0.07); padding-top: 22px; }
+.svc-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 0.73rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--gold); transition: gap 0.3s;
+}
+.svc-link:hover { gap: 14px; }
+.svc-arrow {
+  width: 38px; height: 38px; border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem; color: #1A1814;
+  transition: all 0.4s;
+  flex-shrink: 0;
+}
+.svc-card:hover .svc-arrow { background: #1A1814; color: #F8F6F1; transform: rotate(45deg); }
+
+/* Featured card */
+.svc-card.featured {
+  background: linear-gradient(135deg, rgba(196,154,60,0.06), #fff);
+  border-color: var(--gold-border);
+}
+
+/* ══════════════════════════════════
+   PROCESS STRIP (dark interlude)
+══════════════════════════════════ */
+#process-strip {
+  background: var(--bg);
+  padding: 100px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.ps-head { text-align: center; margin-bottom: 72px; }
+.ps-head .eyebrow { color: var(--gold); }
+.ps-head .eyebrow::before { background: var(--gold); }
+.ps-title { font-family: var(--ff-serif); font-size: clamp(2rem, 3.2vw, 3.2rem); font-weight: 400; color: var(--text); }
+.ps-title em { font-style: italic; color: var(--gold); }
+.ps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
+.ps-line {
+  position: absolute; top: 40px; left: 12%; width: 76%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-border), var(--gold-border), transparent);
+}
+.ps-step { text-align: center; padding: 0 20px; position: relative; z-index: 1; }
+.ps-num {
+  width: 80px; height: 80px; border-radius: 50%;
+  background: var(--surface); border: 1px solid var(--border);
+  margin: 0 auto 28px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--ff-serif); font-size: 1.8rem; font-weight: 400;
+  color: var(--text); transition: all 0.4s ease;
+}
+.ps-step:hover .ps-num {
+  background: var(--gold); color: #080808;
+  transform: scale(1.08);
+  box-shadow: 0 14px 32px rgba(196,154,60,0.3);
+  border-color: var(--gold);
+}
+.ps-step-title { font-family: var(--ff-serif); font-size: 1.15rem; color: var(--text); margin-bottom: 10px; font-weight: 400; }
+.ps-step-desc { font-size: 0.84rem; color: var(--muted); line-height: 1.72; font-weight: 300; }
+
+/* ══════════════════════════════════
+   CTA BAND
+══════════════════════════════════ */
+#cta-band {
+  background: #F8F6F1;
+  padding: 130px 0;
+  text-align: center;
+}
+.cta-inner { max-width: 620px; margin: 0 auto; }
+.cta-inner .eyebrow { justify-content: center; }
+.cta-h { font-family: var(--ff-serif); font-size: clamp(2.4rem, 3.8vw, 3.8rem); font-weight: 400; color: #1A1814; margin: 16px 0 20px; }
+.cta-h em { color: var(--gold); }
+.cta-sub { font-size: 0.95rem; color: #6B6458; line-height: 1.78; margin-bottom: 44px; font-weight: 300; }
+.cta-btns { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--ff-sans); font-size: 0.82rem; font-weight: 600;
+  letter-spacing: 0.05em; text-transform: uppercase;
+  padding: 15px 34px; border-radius: var(--r-pill);
+  cursor: pointer; border: none; transition: all 0.35s ease;
+}
+.btn-dark { background: #1A1814; color: #F8F6F1; }
+.btn-dark:hover { background: var(--gold); color: #080808; transform: translateY(-2px); box-shadow: 0 12px 32px rgba(196,154,60,0.2); }
+.btn-outline-light { background: transparent; border: 1px solid rgba(0,0,0,0.18); color: #1A1814; }
+.btn-outline-light:hover { border-color: var(--gold); color: var(--gold); background: rgba(196,154,60,0.06); }
+
+/* ══════════════════════════════════
+   FOOTER — Exact from Homepage
+══════════════════════════════════ */
+#footer {
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  padding: 80px 0 0;
+  color: var(--text);
+}
+.footer-nl {
+  margin-bottom: 72px;
+  background: rgba(196,154,60,0.05);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--r-xl);
+  padding: 40px 48px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 32px; flex-wrap: wrap;
+}
+.footer-nl p { font-family: var(--ff-serif); font-size: 1.4rem; font-style: italic; color: var(--text); margin-bottom: 5px; }
+.footer-nl span { font-size: 0.82rem; color: var(--muted); }
+.footer-nl-form { display: flex; gap: 10px; flex-wrap: wrap; }
+.footer-nl-form input {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  padding: 12px 24px; color: var(--text);
+  font-size: 0.88rem; font-family: var(--ff-sans);
+  outline: none; min-width: 240px;
+  transition: border-color 0.3s;
+}
+.footer-nl-form input::placeholder { color: rgba(240,238,232,0.3); }
+.footer-nl-form input:focus { border-color: var(--gold); }
+.footer-nl-form button {
+  background: var(--gold); color: #080808;
+  border: none; border-radius: var(--r-pill);
+  padding: 12px 28px; font-size: 0.78rem; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  cursor: pointer; font-family: var(--ff-sans);
+  transition: all 0.3s;
+}
+.footer-nl-form button:hover { background: var(--gold-light); }
+.footer-grid {
+  display: grid; grid-template-columns: 2.2fr 1fr 1fr 1fr;
+  gap: 60px; padding-bottom: 60px;
+  border-bottom: 1px solid var(--border);
+}
+.footer-brand-name { font-family: var(--ff-serif); font-size: 1.6rem; font-weight: 400; color: var(--text); margin-bottom: 16px; }
+.footer-brand-name span { color: var(--gold); }
+.footer-brand p { font-size: 0.86rem; color: var(--muted); line-height: 1.82; font-weight: 300; max-width: 280px; }
+.footer-socials { display: flex; gap: 10px; margin-top: 28px; }
+.footer-socials a {
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.68rem; font-weight: 700;
+  color: var(--muted); transition: all 0.3s;
+}
+.footer-socials a:hover { border-color: var(--gold); color: var(--gold); background: var(--gold-glow); }
+.footer-col-hd {
+  font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: rgba(240,238,232,0.3); margin-bottom: 24px;
+  display: flex; align-items: center; gap: 8px;
+}
+.footer-col-hd::before { content: ''; width: 14px; height: 1px; background: var(--gold); }
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 14px; }
+.footer-links a { font-size: 0.86rem; color: var(--muted); font-weight: 300; transition: all 0.25s; }
+.footer-links a:hover { color: rgba(240,238,232,0.85); padding-left: 4px; }
+.footer-bottom {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 24px 0; flex-wrap: wrap; gap: 16px;
+}
+.footer-bottom p { font-size: 0.8rem; color: rgba(240,238,232,0.25); font-weight: 300; }
+.footer-bottom .tag { font-family: var(--ff-serif); font-style: italic; color: var(--gold); font-size: 0.95rem; }
+
+/* ══════════════════════════════════
+   ANIMATIONS
+══════════════════════════════════ */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.9s cubic-bezier(0.16,1,0.3,1), transform 0.9s cubic-bezier(0.16,1,0.3,1); }
+.reveal.active { opacity: 1; transform: translateY(0); }
+.d1 { transition-delay: 0.1s; }
+.d2 { transition-delay: 0.2s; }
+.d3 { transition-delay: 0.3s; }
+.d4 { transition-delay: 0.4s; }
+
+/* ══════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════ */
+@media (max-width: 1024px) {
+  .svc-grid { grid-template-columns: repeat(2, 1fr); }
+  .ps-grid { grid-template-columns: repeat(2, 1fr); gap: 48px; }
+  .ps-line { display: none; }
+}
+@media (max-width: 768px) {
+  .nav-links, .nav-cta { display: none !important; }
+  .hamburger { display: flex; }
+  .container { padding: 0 24px; }
+  .nav-inner { padding: 0 24px; }
+  .hero-inner { padding: 0 24px; }
+  .svc-grid { grid-template-columns: 1fr; }
+  .ps-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .footer-nl { flex-direction: column; padding: 32px; }
+  .hero-stats-row { gap: 20px; padding: 20px 28px; }
+}
+@media (max-width: 480px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .hero-stats-row { flex-direction: column; gap: 16px; }
+  .hs-div { width: 40px; height: 1px; }
+}
+
+/* ── Logo Image ── */
+.nav-logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+.footer-logo-img {
+  height: 50px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+.nav-logo-placeholder { display: none !important; }
+.nav-logo-name { display: none !important; }
+.footer-brand-name { display: none !important; }
+
+</style>
+</head>
+<body>
+
+<!-- ══ NAVBAR — Exact from Homepage ══ -->
+<!-- ══ NAVBAR ══ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/DFREE-logo.png" alt="DFree Novelish" class="nav-logo-img">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-drop">
+        <a href="about.html">About ▾</a>
+        <ul class="nav-drop-menu">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="chairman-msg.html">Chairman's Message</a></li>
+          <li><a href="our-team.html">Our Team</a></li>
+          <li><a href="our-advisor.html">Our Advisors</a></li>
+          <li><a href="our-client.html">Our Clients</a></li>
+          <li><a href="certifications.html">Awards &amp; Certificates</a></li>
+        </ul>
+      </li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="eventsandconf.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="sample-work.html">Sample Work</a></li>
+      <li><a href="contact-us.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta-group">
+      <a href="contact-us.html" class="nav-cta">Start a Project</a>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="mob-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="eventsandconf.html">Events</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="sample-work.html">Sample Work</a></li>
+    <li><a href="contact-us.html">Contact</a></li>
+  </ul>
+  <a href="contact-us.html" class="mob-cta">Start a Project</a>
+</div>
+
+<!-- ══ PAGE HERO ══ -->
+<section id="page-hero">
+  <div class="hero-noise"></div>
+  <div class="hero-radial"></div>
+  <div class="hero-lines"></div>
+  <div class="hero-inner">
+    <p class="hero-tag reveal active">Comprehensive Solutions</p>
+    <h1 class="hero-h1 reveal active d1">
+      Elevating Ideas Into<br>
+      <em>Masterpieces.</em>
+    </h1>
+    <p class="hero-sub reveal active d2">From rigorous academic research to dynamic digital brand growth, explore our full suite of premium services — engineered for your success.</p>
+    <div class="hero-stats-row reveal active d3">
+      <div class="hs">
+        <div class="hs-val">10K+</div>
+        <div class="hs-lbl">Projects Delivered</div>
+      </div>
+      <div class="hs-div"></div>
+      <div class="hs">
+        <div class="hs-val">98%</div>
+        <div class="hs-lbl">Success Rate</div>
+      </div>
+      <div class="hs-div"></div>
+      <div class="hs">
+        <div class="hs-val">6 Yrs</div>
+        <div class="hs-lbl">Experience</div>
+      </div>
+      <div class="hs-div"></div>
+      <div class="hs">
+        <div class="hs-val">24/7</div>
+        <div class="hs-lbl">Expert Support</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MARQUEE ══ -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span class="marquee-item">Assignment Help <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Research Writing <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Turnitin Reports <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Thesis Writing <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Web Design & Dev <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Social Marketing <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">iOS App Dev <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Journal Publication <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Content Writing <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Book Publishing <span class="marquee-sep">◆</span></span>
+    <!-- duplicate for seamless loop -->
+    <span class="marquee-item">Assignment Help <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Research Writing <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Turnitin Reports <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Thesis Writing <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Web Design & Dev <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Social Marketing <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">iOS App Dev <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Journal Publication <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Content Writing <span class="marquee-sep">◆</span></span>
+    <span class="marquee-item">Book Publishing <span class="marquee-sep">◆</span></span>
+  </div>
+</div>
+
+<!-- ══ SERVICES CATALOG ══ -->
+<section id="services-catalog">
+  <div class="container">
+
+    <div class="scat-head reveal">
+      <p class="eyebrow">Our Capabilities</p>
+      <h2 class="sec-title">Services Engineered<br>for <em>Success</em></h2>
+      <p class="sec-sub">Two focused divisions — academic mastery and digital growth — delivering measurable outcomes globally.</p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-row reveal">
+      <button class="filter-btn active" data-filter="all">All Services</button>
+      <button class="filter-btn" data-filter="academic">Academic & Writing</button>
+      <button class="filter-btn" data-filter="digital">Digital & Business</button>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="svc-grid" id="svcGrid">
+
+      <!-- 01 Assignment Help -->
+      <div class="svc-card reveal filter-item" data-category="academic">
+        <div class="svc-img-wrap">
+          <span class="svc-badge">Academic</span>
+          <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=600&q=80" alt="Assignment Help" class="svc-img">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">01 —</div>
+          <h3 class="svc-title">Assignment Help</h3>
+          <p class="svc-desc">Expertly crafted assignments for Graduation & Post-Graduation levels, tailored to strict university standards and delivered on time by subject-matter specialists.</p>
+          <div class="svc-footer">
+            <a href="contact-us.html" class="svc-link">Learn More →</a>
+            <div class="svc-arrow">↗</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 Research Writing -->
+      <div class="svc-card reveal d1 filter-item" data-category="academic">
+        <div class="svc-img-wrap">
+          <span class="svc-badge">Academic</span>
+          <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80" alt="Research Writing" class="svc-img">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">02 —</div>
+          <h3 class="svc-title">Research Writing</h3>
+          <p class="svc-desc">Dedicated, high-level research and thesis writing support specifically engineered for Ph.D. students and complex scholarly projects — with rigorous methodology.</p>
+          <div class="svc-footer">
+            <a href="contact-us.html" class="svc-link">Learn More →</a>
+            <div class="svc-arrow">↗</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 iOS App Development -->
+      <div class="svc-card reveal d2 filter-item" data-category="digital">
+        <div class="svc-img-wrap">
+          <span class="svc-badge digital">Business</span>
+          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&q=80" alt="iOS App Development" class="svc-img">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">03 —</div>
+          <h3 class="svc-title">iOS App Development</h3>
+          <p class="svc-desc">Custom iOS applications built to deliver seamless user experiences and robust functionality for your business or personal projects on the Apple platform.</p>
+          <div class="svc-footer">
+            <a href="contact-us.html" class="svc-link">Learn More →</a>
+            <div class="svc-arrow">↗</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 04 Cover Page & SOP -->
+      <div class="svc-card reveal filter-item" data-category="academic">
+        <div class="svc-img-wrap">
+          <span class="svc-badge">Academic</span>
+          <img src="https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?auto=format&fit=crop&w=600&q=80" alt="SOP Writing" class="svc-img">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">04 —</div>
+          <h3 class="svc-title">Cover Page & SOP</h3>
+          <p class="svc-desc">Command attention from admissions boards with powerfully written Statements of Purpose and immaculate, professionally structured cover pages.</p>
+          <div class="svc-footer">
+            <a href="contact-us.html" class="svc-link">Learn More →</a>
+            <div class="svc-arrow">↗</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 05 Web Design & Upkeep -->
+      <div class="svc-card reveal d1 filter-item featured" data-category="digital">
+        <div class="svc-img-wrap">
+          <span class="svc-badge digital">Digital</span>
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Web Design" class="svc-img">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">05 —</div>
+          <h3 class="svc-title">Web Design & Upkeep</h3>
+          <p class="svc-desc">High-performance, modern websites designed to convert. From bespoke custom builds to ongoing technical maintenance, security, and performance optimization.</p>
+          <div class="svc-footer">
+            <a href="contact-us.html" class="svc-link">Learn More →</a>
+            <div class="svc-arrow">↗</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 06 Social Media Marketing -->
+      <div class="svc-card reveal d2 filter-item" data-category="digital">
+        <div class="svc-img-wrap">
+          <span class="svc-badge digital">Digital</span>
+          <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=600&q=80" alt="Social Media Marketing" class="svc-img">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">06 —</div>
+          <h3 class="svc-title">Social Media Marketing</h3>
+          <p class="svc-desc">Data-driven campaigns and content strategies that amplify brand presence, engage audiences, and predictably scale your business on every major platform.</p>
+          <div class="svc-footer">
+            <a href="contact-us.html" class="svc-link">Learn More →</a>
+            <div class="svc-arrow">↗</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 07 Custom Software Development -->
+      <div class="svc-card reveal filter-item" data-category="digital">
+        <div class="svc-img-wrap">
+          <span class="svc-badge digital">Digital</span>
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80" alt="Custom Software" class="svc-img">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">07 —</div>
+          <h3 class="svc-title">Custom Software Dev</h3>
+          <p class="svc-desc">Scalable web platforms, student portals, and business applications — tailored for global standards, ensuring performance, security, and seamless user experience.</p>
+          <div class="svc-footer">
+            <a href="contact-us.html" class="svc-link">Learn More →</a>
+            <div class="svc-arrow">↗</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 08 Turnitin Plagiarism -->
+      <div class="svc-card reveal d1 filter-item" data-category="academic">
+        <div class="svc-img-wrap">
+          <span class="svc-badge">Academic</span>
+          <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80" alt="Turnitin Report" class="svc-img">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">08 —</div>
+          <h3 class="svc-title">Turnitin Plagiarism</h3>
+          <p class="svc-desc">Secure, authentic Turnitin plagiarism and similarity reports ensuring your work maintains the absolute highest level of academic integrity and originality.</p>
+          <div class="svc-footer">
+            <a href="contact-us.html" class="svc-link">Learn More →</a>
+            <div class="svc-arrow">↗</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 09 Journal Publication -->
+      <div class="svc-card reveal d2 filter-item" data-category="academic">
+        <div class="svc-img-wrap">
+          <span class="svc-badge">Academic</span>
+          <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=600&q=80" alt="Journal Publication" class="svc-img">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">09 —</div>
+          <h3 class="svc-title">Journal Publication</h3>
+          <p class="svc-desc">End-to-end guidance for researchers aiming to format, submit, and successfully publish their work in reputable, accredited academic journals worldwide.</p>
+          <div class="svc-footer">
+            <a href="contact-us.html" class="svc-link">Learn More →</a>
+            <div class="svc-arrow">↗</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10 Book Writing & Publishing -->
+      <div class="svc-card reveal filter-item" data-category="academic">
+        <div class="svc-img-wrap">
+          <span class="svc-badge">Academic</span>
+          <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=80" alt="Book Publishing" class="svc-img">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">10 —</div>
+          <h3 class="svc-title">Book Writing & Pub.</h3>
+          <p class="svc-desc">Comprehensive manuscript structuring, ghostwriting, and publication assistance to bring your literary or professional vision to market with excellence.</p>
+          <div class="svc-footer">
+            <a href="contact-us.html" class="svc-link">Learn More →</a>
+            <div class="svc-arrow">↗</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11 Content Writing -->
+      <div class="svc-card reveal d1 filter-item" data-category="academic">
+        <div class="svc-img-wrap">
+          <span class="svc-badge">Writing</span>
+          <img src="https://images.unsplash.com/photo-1455390582262-044cdead27d8?auto=format&fit=crop&w=600&q=80" alt="Content Writing" class="svc-img">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">11 —</div>
+          <h3 class="svc-title">Content Writing</h3>
+          <p class="svc-desc">High-impact, SEO-optimized copywriting for blogs, articles, websites, and business communications that captivate readers and drive measurable engagement.</p>
+          <div class="svc-footer">
+            <a href="contact-us.html" class="svc-link">Learn More →</a>
+            <div class="svc-arrow">↗</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12 Synopsis Writing -->
+      <div class="svc-card reveal d2 filter-item" data-category="academic">
+        <div class="svc-img-wrap">
+          <span class="svc-badge">Academic</span>
+          <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80" alt="Synopsis Writing" class="svc-img">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">12 —</div>
+          <h3 class="svc-title">Synopsis Writing</h3>
+          <p class="svc-desc">Professionally structured synopses that clearly outline your research objectives, methodology, and scope — tailored to meet university and institutional requirements.</p>
+          <div class="svc-footer">
+            <a href="contact-us.html" class="svc-link">Learn More →</a>
+            <div class="svc-arrow">↗</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 13 Thesis Writing -->
+      <div class="svc-card reveal filter-item" data-category="academic">
+        <div class="svc-img-wrap">
+          <span class="svc-badge">Academic</span>
+          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80" alt="Thesis Writing" class="svc-img">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">13 —</div>
+          <h3 class="svc-title">Thesis Writing</h3>
+          <p class="svc-desc">Expert thesis writing from proposal to final submission — structured, well-researched, and formatted to the highest academic standards for undergraduate and postgraduate students.</p>
+          <div class="svc-footer">
+            <a href="contact-us.html" class="svc-link">Learn More →</a>
+            <div class="svc-arrow">↗</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 14 Ads & Campaigns -->
+      <div class="svc-card reveal d1 filter-item" data-category="digital">
+        <div class="svc-img-wrap">
+          <span class="svc-badge digital">Digital</span>
+          <img src="https://images.unsplash.com/photo-1589903308904-1010c2294adc?auto=format&fit=crop&w=600&q=80" alt="Ads and Campaigns" class="svc-img">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">14 —</div>
+          <h3 class="svc-title">Ads & Campaigns</h3>
+          <p class="svc-desc">Strategic digital marketing and ad campaigns designed to help students, startups, and businesses grow their reach, generate qualified leads, and build a strong online presence.</p>
+          <div class="svc-footer">
+            <a href="contact-us.html" class="svc-link">Learn More →</a>
+            <div class="svc-arrow">↗</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROCESS STRIP ══ -->
+<section id="process-strip">
+  <div class="container">
+    <div class="ps-head reveal">
+      <p class="eyebrow">Streamlined Workflow</p>
+      <h2 class="ps-title">How We <em>Operate</em></h2>
+    </div>
+    <div class="ps-grid">
+      <div class="ps-line"></div>
+      <div class="ps-step reveal">
+        <div class="ps-num">1</div>
+        <h4 class="ps-step-title">Consultation</h4>
+        <p class="ps-step-desc">Share your brief. We analyze requirements and align on clear objectives together.</p>
+      </div>
+      <div class="ps-step reveal d1">
+        <div class="ps-num">2</div>
+        <h4 class="ps-step-title">Proposal</h4>
+        <p class="ps-step-desc">Receive a transparent timeline and pricing structure with zero hidden fees.</p>
+      </div>
+      <div class="ps-step reveal d2">
+        <div class="ps-num">3</div>
+        <h4 class="ps-step-title">Execution</h4>
+        <p class="ps-step-desc">Our specialists meticulously craft your solution with real-time progress updates.</p>
+      </div>
+      <div class="ps-step reveal d3">
+        <div class="ps-num">4</div>
+        <h4 class="ps-step-title">Delivery</h4>
+        <p class="ps-step-desc">Final files delivered on schedule, polished and ready for submission or launch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA BAND ══ -->
+<section id="cta-band">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <p class="eyebrow">Initiate Project</p>
+      <h2 class="cta-h">Bring Your Vision<br>To <em>Reality</em></h2>
+      <p class="cta-sub">Connect with our team today — let's secure your academic goals or accelerate your business growth with precision and care.</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/" class="btn btn-dark" target="_blank">Connect via WhatsApp →</a>
+        <a href="mailto:info@dfreenovelish.com" class="btn btn-outline-light">Send an Email</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER — Exact from Homepage ══ -->
+<!-- ══ FOOTER ══ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-nl reveal">
+      <div>
+        <p>Stay in the loop.</p>
+        <span>Get insights, updates &amp; exclusive offers — no spam, ever.</span>
+      </div>
+      <div class="footer-nl-form">
+        <input type="email" id="nl-email" placeholder="your@email.com">
+        <button type="button" >Subscribe</button>
+      </div>
+    </div>
+    <div class="footer-grid reveal">
+      <div class="footer-brand">
+        <img src="assets/DFREE-logo.png" alt="DFree Novelish" class="footer-logo-img">
+        <p>An elite agency delivering uncompromising quality in academic support and digital business growth — globally.</p>
+        <div class="footer-socials">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="X / Twitter">X</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-hd">Academic</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Assignment Writing</a></li>
+          <li><a href="services.html">SOP &amp; Resumes</a></li>
+          <li><a href="services.html">Thesis Support</a></li>
+          <li><a href="services.html">Turnitin Checks</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-hd">Business</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Custom Web Dev</a></li>
+          <li><a href="services.html">Social Media</a></li>
+          <li><a href="services.html">E-Learning Tech</a></li>
+          <li><a href="services.html">Brand Identity</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-hd">Connect</div>
+        <ul class="footer-links">
+          <li><a href="contact-us.html">Start a Project</a></li>
+          <li><a href="https://wa.me/" target="_blank" rel="noopener">WhatsApp Support</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="eventsandconf.html">Events &amp; Conferences</a></li>
+          <li><a href="mailto:info@dfreenovelish.com">info@dfreenovelish.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 DFree Novelish. All rights reserved.</p>
+      <p class="tag">Excellence Delivered.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ── Navbar Scroll ── */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 48);
+}, { passive: true });
+
+/* ── Mobile Menu ── */
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+  document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+});
+mobileMenu.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
+
+/* ── Reveal on Scroll ── */
+const reveals = document.querySelectorAll('.reveal');
+const revealIO = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('active'); revealIO.unobserve(e.target); }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => revealIO.observe(el));
+
+/* ── Filter Logic ── */
+const filterBtns = document.querySelectorAll('.filter-btn');
+const filterItems = document.querySelectorAll('.filter-item');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.getAttribute('data-filter');
+
+    filterItems.forEach(item => {
+      const cat = item.getAttribute('data-category');
+      if (filter === 'all' || cat === filter) {
+        item.classList.remove('hide');
+        item.style.opacity = '1';
+        item.style.transform = 'translateY(0)';
+      } else {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(16px)';
+        setTimeout(() => item.classList.add('hide'), 280);
+      }
+    });
+  });
+});
+</script>
+
+<script src="/js/chatbot.js"></script>
+
+<script>
+/* ══ DFree Novelish — Universal CTA & Newsletter Handler ══ */
+(function() {
+  function showToast(msg, type) {
+    var existing = document.getElementById('dn-page-toast');
+    if (!existing) {
+      var t = document.createElement('div');
+      t.id = 'dn-page-toast';
+      t.style.cssText = 'position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(80px);background:#0F0F0F;border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:16px 28px;font-size:0.9rem;color:#F0EEE8;z-index:99999;transition:all 0.4s cubic-bezier(0.16,1,0.3,1);opacity:0;display:flex;align-items:center;gap:10px;box-shadow:0 20px 60px rgba(0,0,0,0.6);min-width:260px;justify-content:center;font-family:Outfit,sans-serif;';
+      document.body.appendChild(t);
+      existing = t;
+    }
+    existing.style.borderColor = type === 'success' ? 'rgba(52,211,153,0.4)' : 'rgba(239,68,68,0.4)';
+    existing.innerHTML = '<span style="color:' + (type==='success'?'#34d399':'#ef4444') + ';font-weight:700;">' + (type==='success'?'✓':'✕') + '</span><span>' + msg + '</span>';
+    existing.style.transform = 'translateX(-50%) translateY(0)';
+    existing.style.opacity = '1';
+    setTimeout(function() { existing.style.transform = 'translateX(-50%) translateY(80px)'; existing.style.opacity = '0'; }, 4500);
+  }
+
+  /* Newsletter subscribe button */
+  function setupNewsletter() {
+    var btn = document.getElementById('nl-submit') || document.querySelector('.footer-nl-form button, #footer .footer-nl-form button');
+    var inp = document.getElementById('nl-email') || document.querySelector('.footer-nl-form input[type="email"], #footer input[type="email"]');
+    if (!btn || !inp) return;
+    // Remove any old onclick
+    btn.removeAttribute('onclick');
+    btn.addEventListener('click', async function() {
+      var email = inp.value.trim();
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        inp.style.borderColor = '#ef4444'; inp.focus(); return;
+      }
+      inp.style.borderColor = '';
+      btn.disabled = true; btn.textContent = '...';
+      try {
+        var res = await fetch('/api/newsletter', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({email: email})});
+        var data = await res.json();
+        showToast(data.message || (data.success ? 'Subscribed!' : 'Error, try again.'), data.success ? 'success' : 'error');
+        if (data.success) inp.value = '';
+      } catch(e) { showToast('Error connecting. Try again.', 'error'); }
+      finally { btn.disabled = false; btn.textContent = 'Subscribe'; }
+    });
+  }
+
+  /* Quote / CTA modal for "Start a Project" links that aren't on contact page */
+  function setupQuoteModal() {
+    if (window.location.pathname.includes('contact-us')) return;
+    // Create modal
+    var modal = document.createElement('div');
+    modal.id = 'dn-quote-modal';
+    modal.style.cssText = 'position:fixed;inset:0;z-index:9990;display:none;align-items:center;justify-content:center;padding:20px;';
+    modal.innerHTML = '<div style="position:absolute;inset:0;background:rgba(0,0,0,0.8);backdrop-filter:blur(8px);" id="dn-modal-overlay"></div>' +
+      '<div style="position:relative;z-index:1;background:#0F0F0F;border:1px solid rgba(196,154,60,0.3);border-radius:24px;padding:48px;width:100%;max-width:540px;max-height:90vh;overflow-y:auto;">' +
+        '<button id="dn-modal-close" style="position:absolute;top:20px;right:20px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;color:#F0EEE8;width:36px;height:36px;cursor:pointer;font-size:1.2rem;display:flex;align-items:center;justify-content:center;">&times;</button>' +
+        '<h2 style="font-family:Cormorant Garamond,serif;font-size:2rem;font-weight:400;color:#F0EEE8;margin-bottom:8px;">Start a <em style=\'color:#C49A3C;font-style:italic;\'>Project</em></h2>' +
+        '<p style="font-size:0.88rem;color:#6B6860;margin-bottom:32px;">Tell us what you need and we'll get back to you within 24 hours.</p>' +
+        '<form id="dn-quote-form" novalidate>' +
+          '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;">' +
+            '<div><label style="display:block;font-size:0.7rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(240,238,232,0.4);margin-bottom:8px;">Your Name *</label>' +
+            '<input name="name" type="text" required placeholder="John Doe" style="width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 16px;color:#F0EEE8;font-size:0.9rem;font-family:Outfit,sans-serif;outline:none;" class="dn-qinput"></div>' +
+            '<div><label style="display:block;font-size:0.7rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(240,238,232,0.4);margin-bottom:8px;">Email *</label>' +
+            '<input name="email" type="email" required placeholder="john@email.com" style="width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 16px;color:#F0EEE8;font-size:0.9rem;font-family:Outfit,sans-serif;outline:none;" class="dn-qinput"></div>' +
+          '</div>' +
+          '<div style="margin-bottom:16px;"><label style="display:block;font-size:0.7rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(240,238,232,0.4);margin-bottom:8px;">Service Needed</label>' +
+          '<select name="service" style="width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 16px;color:#F0EEE8;font-size:0.9rem;font-family:Outfit,sans-serif;outline:none;cursor:pointer;" class="dn-qinput">' +
+            '<option value="">— Choose a service —</option>' +
+            '<optgroup label="Academic"><option>Assignment Help</option><option>Research Writing</option><option>SOP &amp; Resumes</option><option>Turnitin Report</option><option>Thesis Support</option><option>Content Writing</option></optgroup>' +
+            '<optgroup label="Business"><option>Web Design &amp; Development</option><option>Social Media Marketing</option><option>Software Development</option><option>iOS App Development</option><option>Digital Ads</option><option>Brand Identity</option></optgroup>' +
+            '<option>Other / General Inquiry</option>' +
+          '</select></div>' +
+          '<div style="margin-bottom:24px;"><label style="display:block;font-size:0.7rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(240,238,232,0.4);margin-bottom:8px;">Tell us more</label>' +
+          '<textarea name="message" placeholder="Briefly describe your project or requirements..." rows="4" style="width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 16px;color:#F0EEE8;font-size:0.9rem;font-family:Outfit,sans-serif;outline:none;resize:vertical;" class="dn-qinput"></textarea></div>' +
+          '<button type="submit" id="dn-quote-submit" style="width:100%;background:#C49A3C;color:#080808;border:none;border-radius:999px;padding:16px;font-family:Outfit,sans-serif;font-size:0.82rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:all 0.3s;display:flex;align-items:center;justify-content:center;gap:10px;">Send Request <svg width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2.5\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><line x1=\'22\' y1=\'2\' x2=\'11\' y2=\'13\'></line><polygon points=\'22 2 15 22 11 13 2 9 22 2\'></polygon></svg></button>' +
+        '</form>' +
+      '</div>';
+    document.body.appendChild(modal);
+
+    // Style inputs on focus
+    modal.querySelectorAll('.dn-qinput').forEach(function(el) {
+      el.addEventListener('focus', function() { this.style.borderColor = 'rgba(196,154,60,0.5)'; this.style.boxShadow = '0 0 0 3px rgba(196,154,60,0.08)'; });
+      el.addEventListener('blur', function() { this.style.borderColor = 'rgba(255,255,255,0.1)'; this.style.boxShadow = 'none'; });
+    });
+
+    function closeModal() { modal.style.display = 'none'; document.body.style.overflow = ''; }
+    document.getElementById('dn-modal-close').addEventListener('click', closeModal);
+    document.getElementById('dn-modal-overlay').addEventListener('click', closeModal);
+
+    // Quote form submit
+    document.getElementById('dn-quote-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      var fd = new FormData(this);
+      var name = fd.get('name'); var email = fd.get('email');
+      if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showToast('Please fill Name and a valid Email.', 'error'); return;
+      }
+      var btn = document.getElementById('dn-quote-submit');
+      btn.disabled = true; btn.textContent = 'Sending...';
+      try {
+        var res = await fetch('/api/quote', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({name:name,email:email,service:fd.get('service'),message:fd.get('message')})});
+        var data = await res.json();
+        showToast(data.message || (data.success ? 'Request sent!' : 'Error, try again.'), data.success ? 'success' : 'error');
+        if (data.success) { this.reset(); closeModal(); }
+      } catch(ex) { showToast('Network error. Email us at info@dfreenovelish.com', 'error'); }
+      finally { btn.disabled = false; btn.innerHTML = 'Send Request <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>'; }
+    });
+
+    // Wire all "Start a Project" / "Get a Quote" / CTA links/buttons to open modal
+    document.querySelectorAll('a.nav-cta, a.mob-cta').forEach(function(el) {
+      // Only intercept on non-contact pages
+      if (el.getAttribute('href') === 'contact-us.html' || el.getAttribute('href') === '/contact-us.html') {
+        el.addEventListener('click', function(ev) { ev.preventDefault(); modal.style.display = 'flex'; document.body.style.overflow = 'hidden'; });
+      }
+    });
+    // Also capture any buttons with these texts
+    document.querySelectorAll('button, a').forEach(function(el) {
+      var txt = (el.textContent || '').trim().toLowerCase();
+      if ((txt === 'get a free quote' || txt === 'start a project' || txt === 'get started' || txt === 'request a quote') && el.tagName !== 'A') {
+        el.addEventListener('click', function(ev) { ev.preventDefault(); modal.style.display = 'flex'; document.body.style.overflow = 'hidden'; });
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() { setupNewsletter(); setupQuoteModal(); });
+  } else {
+    setupNewsletter(); setupQuoteModal();
+  }
+})();
+</script>
+</body>
+</html>
