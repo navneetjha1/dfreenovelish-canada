@@ -174,7 +174,20 @@ app.post('/api/contact', async (req, res) => {
 
   res.json({ success: true, message: "Thank you! We'll respond within 24 hours. Check your inbox for a confirmation." });
 });
-
+/* ── Page Routing ───────────────────────────────────── */
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
+app.get('/index.html', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
+app.get('/about.html', (req, res) => res.sendFile(path.join(__dirname, 'about.html')));
+app.get('/services.html', (req, res) => res.sendFile(path.join(__dirname, 'services.html')));
+app.get('/sample-work.html', (req, res) => res.sendFile(path.join(__dirname, 'sample-work.html')));
+app.get('/contact-us.html', (req, res) => res.sendFile(path.join(__dirname, 'contact-us.html')));
+app.get('/eventsandconf.html', (req, res) => res.sendFile(path.join(__dirname, 'eventsandconf.html')));
+app.get('/gallery.html', (req, res) => res.sendFile(path.join(__dirname, 'gallery.html')));
+app.get('/chairman-msg.html', (req, res) => res.sendFile(path.join(__dirname, 'chairman-msg.html')));
+app.get('/our-team.html', (req, res) => res.sendFile(path.join(__dirname, 'our-team.html')));
+app.get('/our-advisor.html', (req, res) => res.sendFile(path.join(__dirname, 'our-advisor.html')));
+app.get('/our-client.html', (req, res) => res.sendFile(path.join(__dirname, 'our-client.html')));
+app.get('/certifications.html', (req, res) => res.sendFile(path.join(__dirname, 'certifications.html')));
 /* ── Newsletter ── */
 app.post('/api/newsletter', async (req, res) => {
   const { email } = req.body;
